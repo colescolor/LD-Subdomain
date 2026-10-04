@@ -62,3 +62,10 @@ The prototype does not copy the main site's numerical time-saving or structural-
 - Catalog discrepancies: the LDST shelf-system photo has an E900BP-8 caption on the public store; the library identifies it from the photo filename and published catalog listing and preserves a note. E4005 has no product image; the E4008 image filename identifies a different cutter, so neither is presented as a verified product photograph. Three drawer-slide families lack size-specific SKUs in the public listing; no identifiers are invented.
 - Copied file SHA-256, `7000-short.json`: `bb37ea44b3df4005ec986861732a98b761c22333f1380763052e87fb0f4fc69c`.
 - Copied file SHA-256, `8002-40-R5.json`: `1d6917f053a552ebe83465ad87d606f77a090075094e5207733da305fe6e06e7`.
+
+
+## Model-first gallery and connector identity correction
+
+`src/model-previews.js` draws live, model-derived mini views using a shared Three.js renderer. These replace storefront photographs in homepage and library cards; original reference photos remain an optional secondary view in the inspector. No external image-generation service is involved.
+
+The green homepage model is E900BP nylon, with photo-based thicker lower shanks and branding. E3259BM is a silver metal mini with seven bridge through-holes and no lettering. `connector-detail.js` now reconstructs the perforated bridge within the original mounting envelope; the source CAD JSON remains unchanged. Earlier entries describing its bridge as unchanged or its added wordmark are superseded by this correction. Source: https://lockdowel.com/elementor-37341/ and its local original `store-01.jpg` / `store-04.jpg` photographs.

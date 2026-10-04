@@ -36,7 +36,7 @@ test('opening holds a clear gap, then inserts once without withdrawal',()=>{
  for(let t=0;t<=6;t+=.01){const f=connectionFrame(t);if(f.woodOpacity>0)near(f.cameraFrame,1);if(f.receiverOpacity>0)near(f.receiverFrame,1);}
 });
 
-test('detailed posts have actual ridges, rounded tips, and a raised wordmark inside the CAD envelope',async()=>{
+test('metal mini has ridged posts, seven open bridge holes, and no nylon wordmark',async()=>{
  const asset=JSON.parse(await readFile('public/assets/e3259bm-mesh.json','utf8'));
  const wordmark=JSON.parse(await readFile('public/assets/connector-wordmark.json','utf8'));
  const material=new THREE.MeshStandardMaterial();
@@ -48,8 +48,11 @@ test('detailed posts have actual ridges, rounded tips, and a raised wordmark ins
   assert.ok(hitAt(8.63)-hitAt(8.39)>.35,'Barb must have a real raised retention edge');
   assert.ok(hitAt(19.18)<hitAt(17.1),'Lead-in should taper to a rounded tip');
  }
- const logo=model.getObjectByName('Molded Lockdowel wordmark');logo.geometry.computeBoundingBox();
- assert.ok(logo.geometry.boundingBox.max.z>1.6);assert.ok(logo.geometry.boundingBox.max.y<0);assert.ok(logo.geometry.boundingBox.min.y>-4);
+ assert.equal(model.getObjectByName('Molded Lockdowel wordmark'),undefined);
+ for(let i=-3;i<=3;i++){
+  const ray=new THREE.Raycaster(new THREE.Vector3(i*4.4,-2,10),new THREE.Vector3(0,0,-1));assert.equal(ray.intersectObject(model).length,0,'Metal bridge hole must pass all the way through');
+  ray.set(new THREE.Vector3(i*4.4,-3.2,10),new THREE.Vector3(0,0,-1));assert.ok(ray.intersectObject(model).length>0,'Material must remain below each perforation');
+ }
  for(const g of new Set(model.children.map(m=>m.geometry)))g.dispose();material.dispose();
 });
 
@@ -57,4 +60,22 @@ test('the ending preserves the same locked geometry and opaque surfaces througho
  const locked=connectionFrame(10.7);
  for(let t=10.7;t<=16;t+=.01){const f=connectionFrame(t);for(const key of ['carrierX','carrierY','connectorY','receiverY','woodOpacity','receiverOpacity'])near(f[key],locked[key]);assert.equal(f.section,true);}
  near(connectionFrame(16).zoom,1);
+});
+
+test('all three showcase models get clear mounting bores and receiving pockets',async()=>{
+ const {connectionProfile}=await import('../src/channel-geometry.js');
+ const catalog=JSON.parse(await readFile('public/assets/parts/catalog.json','utf8'));
+ for(const id of ['e900bp','e3259bm','e910bp']){
+  const part=catalog.parts.find(p=>p.id===id),profile=connectionProfile(part),{carrier,receiver}=createConnectionWood(THREE,profile);
+  const radius=part.model.radius||2.5;
+  for(const x of [-profile.spacing/2,profile.spacing/2]){
+   near(cast(carrier,[x,-1,radius*.95],[0,1,0]).y,profile.boreDepth);
+   near(cast(carrier,[x+profile.boreRadius+.2,-1,0],[0,1,0]).y,0);
+  }
+  // A visible throat, deeper receiving pocket, and solid material outside remain.
+  near(cast(receiver,[-40,10,profile.mouth-.1],[0,-1,0]).y,-9.1);
+  near(cast(receiver,[-40,10,profile.mouth+.1],[0,-1,0]).y,0);
+  near(cast(receiver,[-40,-4,profile.pocket-.1],[0,-1,0]).y,-9.1);
+  [...carrier,...receiver].forEach(g=>g.dispose());
+ }
 });

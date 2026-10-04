@@ -20,7 +20,7 @@ function drawingCard(d) { return `<article class="drawing-card" data-kind="${d.k
 const cta = () => `<section class="end-cta wrap"><p class="eyebrow">FROM POSSIBILITY TO PRODUCTION</p><h2>Let’s build<br>what’s next<span>.</span></h2><div><p>Bring your idea to the Lockdowel team.<br>Let’s find the right connection for it.</p>${link('/start-project/','Plan your project')}</div></section>`;
 export const pages = [
 {
- path:'/', title:'Channel-lock assembly guides and interactive demos | Lockdowel Build', description:'Explore the actual E3259BM channel lock in interactive 3D. Watch it mount into wood, enter a routed channel, and lock two panels together.',
+ path:'/', title:'Channel-lock assembly guides and interactive demos | Lockdowel Build', description:'Inspect E900BP, E3259BM and E910BP in interactive 3D. Explore the parts library and watch your selected connector mount, seat, and lock two panels together.',
  body:channelHome+`<section class="wrap guide-related"><p class="eyebrow">LEARN THE CONNECTION. PLAN THE ASSEMBLY.</p><h2>Start with a practical guide.</h2><a href="/guides/how-channel-lock-connectors-work/"><span>FUNDAMENTALS</span><strong>How channel-lock connectors work</strong><b aria-hidden="true">↗</b></a><a href="/guides/e3259bm-assembly-sequence/"><span>CONNECTOR STUDY</span><strong>Understanding the E3259BM assembly sequence</strong><b aria-hidden="true">↗</b></a><a href="/guides/planning-cabinet-assembly-order/"><span>DESIGN PLANNING</span><strong>Planning cabinet assembly order</strong><b aria-hidden="true">↗</b></a></section>`
 },
 partsPage,

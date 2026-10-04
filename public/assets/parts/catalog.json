@@ -85,7 +85,7 @@
         "type": "detailed-cad",
         "asset": "/assets/e3259bm-mesh.json"
       },
-      "note": "CAD bridge and post envelope, with illustrative ridges and molded lettering.",
+      "note": "Source CAD mounting envelope with photo-based metal ridges and seven bridge holes. No molded logo. Surface details are illustrative.",
       "photo": "/assets/parts/store-04.jpg",
       "source": "https://lockdowel.com/elementor-37341/",
       "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/Metal-Channel-Lock-mini-E3259BM-300x300.jpg",
@@ -483,7 +483,7 @@
     {
       "id": "8002-30",
       "sku": "8002-30",
-      "name": "8 × 30 mm Spring Pin",
+      "name": "8 \u00d7 30 mm Spring Pin",
       "category": "Pins & housings",
       "material": "Metal",
       "basis": "Reference model",
@@ -501,7 +501,7 @@
     {
       "id": "8002-40-r5",
       "sku": "8002-40-R5",
-      "name": "8 × 40 mm Spring Pin",
+      "name": "8 \u00d7 40 mm Spring Pin",
       "category": "Pins & housings",
       "material": "Metal",
       "basis": "Source CAD",
@@ -523,7 +523,7 @@
     {
       "id": "8005-36",
       "sku": "8005-36",
-      "name": "5 × 36 mm Spring Pin",
+      "name": "5 \u00d7 36 mm Spring Pin",
       "category": "Pins & housings",
       "material": "Metal",
       "basis": "Reference model",

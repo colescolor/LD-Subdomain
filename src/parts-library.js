@@ -1,11 +1,13 @@
 import * as THREE from '/vendor/three.module.js';
 import {RoomEnvironment} from '/vendor/RoomEnvironment.js';
 import {buildPart,disposePart} from './parts-geometry.js';
+import {initModelPreviews} from './model-previews.js';
 
 export async function initPartsLibrary(root,{paused=false}={}){
  const q=s=>root.querySelector(s),qa=s=>[...root.querySelectorAll(s)],host=q('[data-part-canvas]'),inspector=q('[data-part-inspector]'),reference=q('[data-part-reference]'),status=q('[data-part-status]');
  const fetchJSON=async url=>{const r=await fetch(url);if(!r.ok)throw new Error('Part asset unavailable');return r.json();};
  let catalog;try{catalog=await fetchJSON('/assets/parts/catalog.json');}catch{status.textContent='The library could not load. Please refresh to try again.';return;}
+ initModelPreviews(root,{paused,catalog});
  const parts=catalog.parts,byId=new Map(parts.map(p=>[p.id,p])),cards=qa('[data-part-card]');
  let selected=null,scope='3d',category='All',photo=false,renderer=null,scene,camera,pivot,current=null,envTarget,raf=0,last=0,visible=true,spin=!paused,yaw=.45,pitch=.3,zoom=1,radius=25,requestId=0,drag=false,previousX=0,previousY=0;
  const cache=new Map();const asset=url=>{if(!cache.has(url))cache.set(url,fetchJSON(url).catch(e=>{cache.delete(url);throw e;}));return cache.get(url);};
@@ -45,7 +47,7 @@ export async function initPartsLibrary(root,{paused=false}={}){
    const environment=new RoomEnvironment(),pmrem=new THREE.PMREMGenerator(renderer);envTarget=pmrem.fromScene(environment,.04);scene.environment=envTarget.texture;scene.environmentIntensity=.38;environment.dispose();pmrem.dispose();
    scene.add(new THREE.HemisphereLight(0xeaf2df,0x233126,.35));
    for(const [color,intensity,position]of [[0xfff2df,2.4,[-30,45,60]],[0xd5e6ff,1,[40,15,-20]],[0xffffff,.25,[0,-25,40]]]){const light=new THREE.DirectionalLight(color,intensity);light.position.set(...position);scene.add(light);}
-   renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();requestId++;cancelAnimationFrame(raf);raf=0;renderer=null;setView('photo');status.hidden=false;status.textContent='3D is unavailable. The product reference is shown instead.';});
+   renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();requestId++;cancelAnimationFrame(raf);raf=0;renderer=null;setView('3d');status.hidden=false;status.textContent='3D is unavailable. Choose Reference photo for a second look.';});
    new ResizeObserver(resize).observe(host);
    new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;if(visible){last=0;request();}else{cancelAnimationFrame(raf);raf=0;}},{rootMargin:'80px'}).observe(inspector);
    document.addEventListener('visibilitychange',()=>{last=0;if(!document.hidden)request();});
@@ -63,7 +65,7 @@ export async function initPartsLibrary(root,{paused=false}={}){
   cancelAnimationFrame(raf);raf=0;last=0;if(current){pivot.remove(current);disposePart(current);current=null;}
   yaw=.45;pitch=.3;zoom=1;
   if(scroll&&innerWidth<=700)inspector.scrollIntoView({behavior:paused?'instant':'smooth',block:'start'});
-  if(!part.model||!renderer){setView('photo');root.dataset.partReady=part.model?'fallback':'reference';if(!renderer&&part.model){status.hidden=false;status.textContent='3D is unavailable. Product photo shown.';}return;}
+  if(!part.model||!renderer){setView('3d');status.hidden=false;status.textContent='3D is not available for this part. Reference information is below.';root.dataset.partReady=part.model?'fallback':'reference';if(!renderer&&part.model){status.hidden=false;status.textContent='3D is unavailable. Choose Reference photo for a second look.';}return;}
   setView('3d');status.hidden=false;status.textContent=`Loading ${part.sku}…`;
   try{
    const [data,wordmark]=await Promise.all([part.model.asset?asset(part.model.asset):null,asset('/assets/connector-wordmark.json')]);
@@ -71,7 +73,7 @@ export async function initPartsLibrary(root,{paused=false}={}){
    const object=buildPart(THREE,part,{asset:data,wordmark}),bounds=new THREE.Box3().setFromObject(object),size=bounds.getSize(new THREE.Vector3()),center=bounds.getCenter(new THREE.Vector3()),scale=42/Math.max(size.x,size.y,size.z);
    object.position.sub(center);const normalized=new THREE.Group();normalized.add(object);normalized.scale.setScalar(scale);radius=size.length()*.5*scale;current=normalized;pivot.add(current);
    root.dataset.partReady='true';status.hidden=true;updateButtons();resize();request();
-  }catch(e){if(token!==requestId)return;console.warn('Part model unavailable:',e);setView('photo');status.hidden=false;status.textContent='Model unavailable. Product photo shown.';root.dataset.partReady='fallback';}
+  }catch(e){if(token!==requestId)return;console.warn('Part model unavailable:',e);setView('3d');status.hidden=false;status.textContent='Model unavailable. Choose Reference photo for a second look.';root.dataset.partReady='fallback';}
  }
  qa('[data-part-select]').forEach(b=>b.addEventListener('click',()=>select(b.dataset.partSelect,{scroll:true})));
  qa('[data-part-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.partView)));

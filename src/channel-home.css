@@ -42,3 +42,23 @@
 @media print{.connection-chapter{break-inside:avoid}.connection-parts-preview img{height:100px}}
 
 @media(min-width:701px) and (max-width:900px){.connection-stage-column{top:82px;height:calc(100svh - 82px)}}
+
+/* Model-first selector: three small 3D views beside the full-size inspection. */
+.connection-stage-top b{font-weight:500}
+.connection-model-picker{position:absolute;right:20px;top:74px;width:86px;display:grid;gap:10px;z-index:6}
+.connection-model-picker button{padding:0;border:1px solid #75856865;background:#172214;color:#c4d5b4;overflow:hidden}
+.connection-model-picker button[aria-pressed=true]{border-color:#c3e7a0;background:#35482a}
+.connection-model-picker button>span:last-child{display:block;padding:7px 2px;font-size:8px;letter-spacing:.04em}
+.model-mini{display:block;aspect-ratio:1;position:relative;width:100%;overflow:hidden;color:#a9c194}
+.model-mini>span{position:absolute;inset:0;display:grid;place-items:center;font-size:9px}
+.model-mini canvas{width:100%;height:100%;display:block}
+.connection-viewport{right:112px}
+.connection-after{position:absolute;bottom:179px;left:30px;right:25px;z-index:5;padding:10px 14px;border:1px solid #688654;background:#192714}
+.connection-after>span{display:block;font-size:10px;color:#b8cba5;margin-bottom:6px}
+.connection-after>a{font-size:14px;color:#d5f3b6}
+.connection-model-prompt{padding-left:15px;border-left:2px solid #80996b}
+@media(max-width:1100px){.connection-model-picker{width:68px;right:12px;gap:7px}.connection-viewport{right:84px}.connection-model-picker button>span:last-child{font-size:7px}.connection-stage-top>span:last-child{max-width:150px;text-align:right;line-height:1.5}}
+@media(max-width:700px){.connection-stage-column{height:580px;max-height:none;min-height:520px}.connection-model-picker{top:46px;width:70px}.connection-viewport{right:85px;bottom:180px}.connection-after{bottom:165px;left:20px;right:20px}.connection-stage-top>span:last-child{max-width:180px}}
+
+.connection-model-picker button{position:relative;aspect-ratio:1}
+.connection-model-picker button>span:last-child{position:absolute;bottom:3px;left:0;right:0;padding:3px 0;background:#172214b8}

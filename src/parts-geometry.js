@@ -20,7 +20,7 @@ export function buildPart(THREE,part,{asset,wordmark}={}){
   const g=new THREE.ExtrudeGeometry(path.toShapes(false),{depth:.14,bevelEnabled:true,bevelSize:.022,bevelThickness:.02,bevelSegments:2,curveSegments:20});g.scale(width/25,width/25,1);add(g,0,y,z);
  }
  function barbed(radius,height,x=0,y=0,{all=false,lower=false}={}){
-  const core=radius*.82,full=all||height<radius*3,start=full?.25:height*.44,end=height-Math.min(radius*.6,height*.1),profile=[[0,0],[core,0],[core,start]],rings=full?Math.max(5,Math.round(height/1.35)):6,pitch=(end-start)/rings;
+  const core=radius*.82,full=all||height<radius*3,start=full?.25:height*.44,end=height-Math.min(radius*.6,height*.1),profile=[[0,0],[metal?core:radius*.98,0],[metal?core:radius*.98,full?start:start-.35],[core,start]],rings=full?Math.max(5,Math.round(height/1.35)):6,pitch=(end-start)/rings;
   for(let h=start;h<end-.5;h+=pitch)profile.push([core,h],[radius,h+.10],[radius,h+.24],[core,Math.min(h+pitch*.86,end)]);
   const shoulder=Math.max(end,profile.at(-1)[1]);profile.push([core,shoulder],[radius*.97,shoulder+.18]);
   for(let i=0;i<=8;i++){const a=i/8*Math.PI/2;profile.push([radius*.97*Math.cos(a),shoulder+.18+(height-shoulder-.18)*Math.sin(a)]);}
@@ -28,7 +28,7 @@ export function buildPart(THREE,part,{asset,wordmark}={}){
  }
  function snapTip(radius,y){return lathe([[0,0],[radius*.65,0],[radius*.65,2],[radius,2.2],[radius,3.2],[radius*.5,4.2],[0,4.5]],0,y);}
  if(model.type==='detailed-cad'){
-  material.dispose();return createDetailedConnector(THREE,asset,wordmark,new THREE.MeshPhysicalMaterial({color:'#b5bdc1',metalness:.8,roughness:.3}));
+  return createDetailedConnector(THREE,asset,null,material);
  }
  if(model.type==='cad'){
   const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(asset.positions,3));g.setAttribute('normal',new THREE.Float32BufferAttribute(asset.normals,3));g.setIndex(asset.indices);
