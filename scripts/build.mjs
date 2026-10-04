@@ -7,7 +7,7 @@ const out=join(root,'dist');
 const production=process.argv.includes('--production');
 await mkdir(out,{recursive:true});
 await cp(join(root,'public'),out,{recursive:true});
-for(const file of ['app.js','scene.js','calculator.js','receiver-geometry.js','styles.css','channel-home.js','channel-geometry.js','channel-home.css'])await copyFile(join(root,'src',file),join(out,file));
+for(const file of ['app.js','scene.js','calculator.js','receiver-geometry.js','styles.css','channel-home.js','channel-geometry.js','connector-detail.js','channel-home.css'])await copyFile(join(root,'src',file),join(out,file));
 await mkdir(join(out,'vendor'),{recursive:true});
 for(const file of ['three.module.js','three.core.js'])await copyFile(join(root,'node_modules/three/build',file),join(out,'vendor',file));
 await copyFile(join(root,'node_modules/three/LICENSE'),join(out,'vendor','THREE-LICENSE.txt'));

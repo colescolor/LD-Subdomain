@@ -5,15 +5,15 @@ An independent local prototype for **build.lockdowel.com**. The public-facing id
 
 ## Connector homepage
 
-The homepage now leads with the actual E3259BM CAD mesh, highlighted green, rotating slowly without wood. Drag or use the arrow buttons to orbit. Play runs a 16-second sequence: press the dowel ends into a bored panel, enter the receiving channel, slide beneath the retaining edges, then pull back as the wood grows into an illustrative open cabinet. A physical cutaway exposes the mounting bores and channel during the close-up. Pause, reset, chapter buttons, rotation toggle, and a scrubber remain available.
+The homepage now leads with an E3259BM CAD-based presentation model, highlighted green, rotating slowly without wood. The original bridge and mounting envelope are retained, with six photo-derived barbs on each post, rounded lead-ins, and raised Lockdowel lettering rebuilt from smooth vector curves with rounded bevels. Drag or use the arrow buttons to orbit. The camera makes room before the wood fades in; the connector starts below it with a clear gap and inserts once. Play runs a 16-second sequence: press the dowel ends into a bored panel, enter the receiving channel, slide beneath the retaining edges, then ease back and orbit slightly around the same finished two-panel joint. The green connector remains visible in the cutaway. The ending uses one scene, one camera, unchanged geometry, opaque panel materials, and a cached shadow map. The close-up has subtle grain, the upright panel has a warm beige finish, and the receiving base is matte slate blue to contrast with the green hardware. A warm directional key light casts real shadows from the connector and panel edges onto the receiving surfaces. Reduced ambient/fill lighting preserves depth. The shadow camera changes coverage with the shot to keep the small channel readable. A physical cutaway exposes the mounting bores and channel during the close-up. Pause, reset, chapter buttons, rotation toggle, and a scrubber remain available.
 
 On desktop, the stage occupies exactly the right half of the viewport and stays pinned through all four homepage text sections. Scrolling does not change playback. On mobile it becomes a pinned stage above the remaining story. Reduced-motion preferences disable the initial spin; manual controls remain usable. Rendering pauses offscreen and in background tabs. A connector still and link to the original film appear when the model cannot load.
 
 The Storkcraft draft files are preserved in `src/storkcraft*`, outside active navigation and builds. No customer-source assets were copied. Its earlier missing-asset build block is removed because the homepage is now an independent product-hardware experience.
 
-New active files: `src/channel-home.mjs`, `src/channel-home.css`, `src/channel-home.js`, and `src/channel-geometry.js`. The original CAD positions, normals, and triangles are preserved; the renderer applies a rigid rotation. Wood, routing, travel, and cabinet geometry are authored illustrations, not production specifications.
+New active files: `src/channel-home.mjs`, `src/channel-home.css`, `src/channel-home.js`, `src/channel-geometry.js`, `src/connector-detail.js`. The original CAD JSON is preserved unchanged; the renderer retains its bridge, replaces the smooth posts within their original envelope, and adds illustrative surface detail. Wood, routing, and travel are authored illustrations, not production specifications.
 
-Validation: build and all nine integration/geometry checks pass. Local Chrome checks passed at 1440 × 1000 and 390 × 844 for the exact 50/50 sticky layout, play/pause, chapter views, scrubbing, drag rotation, no horizontal overflow, reduced motion, and model-load fallback. Revised mounting, locked, and cabinet frames were visually inspected. Later uninterrupted playback test attempts were interrupted by the local Chrome/Edge processes closing. That end-to-end playback run is not claimed as completed; each chapter frame and the timeline state/order checks passed.
+Validation: build and thirteen integration/geometry checks pass. Geometry checks cover the CAD envelope, bores, retaining lips, ridges, raised lettering, a single insertion, safe perspective framing, and an invariant locked joint throughout the ending. Local browser verification covers desktop/mobile rendering, continuous playback, scrubbing backward and forward through the final shot, orbit controls, and no-JavaScript fallback. The previous cabinet and dissolve are removed from the active sequence.
 
 ## Run locally
 
@@ -30,7 +30,7 @@ Open **http://127.0.0.1:4173**. The server runs in the foreground; Ctrl+C stops 
 
 ## The experience
 
-- `/` — actual E3259BM connector close-up, pinned interactive stage, mounting/locking sequence, and cabinet reveal.
+- `/` — actual E3259BM connector close-up, pinned interactive stage, mounting/locking sequence, and finished-joint overview.
 - `/explore/` — keyboard-accessible application explorer for furniture, cabinetry and wall panels, leading to relevant main-site pages.
 - `/drawings/` — a study index whose cards open dedicated HTML pages.
 - `/drawings/boat-table/`, `/drawings/open-cubby/`, `/drawings/angled-table/` — finished/exploded drawing views, overview, next step and explicit PDF download.
@@ -89,7 +89,7 @@ The source video and copied video have identical SHA-256 hashes. The new homepag
 
 This is a locally reviewable presentation website. It has no forms backend, CRM integration, content editor, login, email verification, public uploads, or real AI chat. The calculator uses browser-local input; it does not send data anywhere. External navigation occurs only when a visitor follows a main-site link.
 
-The homepage uses the actual E3259BM CAD mesh highlighted green. Hardware in the older boat-table study remains simplified. Geometry and movements are not a CNC file, engineering validation, or installation instruction. The separate E3259BM video does not validate its compatibility with the table concept.
+The homepage uses the E3259BM CAD bridge and mounting envelope, with photo-derived barbed posts, rounded tips, and shallow 3D Lockdowel branding. The source CAD asset remains unchanged; these surface details are illustrative. Hardware in the older boat-table study remains simplified. Geometry and movements are not a CNC file, engineering validation, or installation instruction. The separate E3259BM video does not validate its compatibility with the table concept.
 
 ## Navigation and geometry revision
 
