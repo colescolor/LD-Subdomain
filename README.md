@@ -112,3 +112,17 @@ The library uses the existing Three.js dependency and its MIT-licensed RoomEnvir
 Validation includes all 24 mesh bounds/normals, genuinely hollow housings and bridge openings, CAD identities, source links and asset availability. Browser checks cover every model, filters and normalized part-number search, photo toggle, spin/orbit/zoom, deep links, desktop/mobile layout, no-JavaScript browsing, and WebGL fallback. No pricing, availability, compatibility, or production dimensional accuracy is inferred from these presentation models.
 
 Model-first revision validation: all 24 mini previews render, the three homepage selections update the full-size view and SKU, the assembly retains the selected part and identifies its SKU, and the completed sequence exposes its library link. Gallery cards have no product photos. Reference imagery is opt-in; unavailable models retain text and documentation links.
+
+## SCR36 sales presentation
+
+The standalone, direct-link sales page is `/projects/scr36/preview/`. It pairs the original drawing with the approved revision-02 film, a finished-cabinet hero, film chapter navigation, project downloads, and sales calls to action. The earlier interactive study at `/projects/scr36/` is preserved.
+
+Source: `public/projects/scr36/preview/`. The static build copies these files unchanged. No public navigation or sitemap includes the page. HTML keeps `noindex, nofollow, noimageindex` in all environments; the existing `/projects/:path*` Vercel header applies `X-Robots-Tag` to the page and its media. No analytics or third-party scripts load on this page. Server-side password protection additionally covers the entire SCR36 directory, including direct requests for drawings, video, and the original interactive study.
+
+Sales buttons use the existing `https://lockdowel.com/contact/` page with SCR36 campaign parameters. Change the two `data-sales` anchors in `index.html` to use a different approved sales destination. This page does not depend on the subdomain inquiry webhook being configured.
+
+Local preview: http://127.0.0.1:4173/projects/scr36/preview/ (or port 3033 when managed by the orchestrator). Build and checks include the page, assets, video byte ranges, and production noindex behavior. This change is not a deployment.
+
+Password access is implemented in `server/project-access.js`, the local server, and root `middleware.js` for Vercel. Visitors use a password-only entry screen; eight-hour, signed, HttpOnly sessions provide access to the SCR36 page and files. The requested password is stored only as a salted server-side scrypt verifier. The footer can clear the session. Wrong passwords, missing/tampered/expired cookies, and unauthorized media byte-range requests are rejected. Attempts are bounded per running server instance; this is not a distributed rate limiter.
+
+Local preview generates a signing secret in ignored `.local/scr36-session.json`. Before deployment, set `SCR36_SESSION_SECRET` to a random 32+ character value in the Vercel project. Missing production configuration fails closed with HTTP 503. Never copy that local file into public assets or commit it. Rotating the signing secret revokes existing sessions. Deploy using the middleware-enabled Vercel project; serving `dist/` with an unrelated static server does not run the gate. The deployment middleware follows https://vercel.com/docs/routing-middleware/api.

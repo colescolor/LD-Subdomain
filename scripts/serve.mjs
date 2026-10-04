@@ -1,3 +1,5 @@
+import {projectAccess,isProtected} from '../server/project-access.js';
+import {localProjectSecret} from '../server/local-project-secret.js';
 import inquiryHandler from '../api/inquiries.js';
 import {Readable} from 'node:stream';
 import {createServer} from 'node:http';
@@ -7,8 +9,16 @@ import {fileURLToPath} from 'node:url';
 import {dirname,join,resolve,extname,sep} from 'node:path';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'../dist');
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.woff2':'font/woff2','.mp4':'video/mp4','.pdf':'application/pdf','.txt':'text/plain; charset=utf-8','.xml':'application/xml'};
-export function createLocalServer(){return createServer(async(req,res)=>{
+export function createLocalServer({accessOptions={}}={}){const secret=localProjectSecret();return createServer(async(req,res)=>{
  res.setHeader('X-Robots-Tag','noindex, nofollow');res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Referrer-Policy','strict-origin-when-cross-origin');res.setHeader('Cache-Control','no-store');
+ const requestUrl='http://'+(req.headers.host||'127.0.0.1')+req.url;
+ if(isProtected(requestUrl)){
+  try{
+   const request=new Request(requestUrl,{method:req.method,headers:req.headers,...(!['GET','HEAD'].includes(req.method)?{body:Readable.toWeb(req),duplex:'half'}:{})});
+   const denied=await projectAccess(request,{secret,...accessOptions});
+   if(denied){res.writeHead(denied.status,Object.fromEntries(denied.headers));res.end(req.method==='HEAD'?undefined:Buffer.from(await denied.arrayBuffer()));return;}
+  }catch{res.writeHead(400,{'Cache-Control':'no-store'});res.end('Invalid project request.');return;}
+ }
  if(['/api/inquiries','/api/inquiries/'].includes(req.url?.split('?')[0])){try{const request=new Request('http://127.0.0.1'+req.url,{method:req.method,headers:req.headers,...(!['GET','HEAD'].includes(req.method)?{body:Readable.toWeb(req),duplex:'half'}:{})});const response=await inquiryHandler.fetch(request);res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()));}catch{res.writeHead(400,{'Content-Type':'application/json'});res.end(JSON.stringify({error:'Invalid request.'}));}return;}
  if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{'Allow':'GET, HEAD'});res.end();return;}
  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{res.writeHead(400);res.end('Invalid URL');return;}

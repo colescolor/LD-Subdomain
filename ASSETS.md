@@ -69,3 +69,9 @@ The prototype does not copy the main site's numerical time-saving or structural-
 `src/model-previews.js` draws live, model-derived mini views using a shared Three.js renderer. These replace storefront photographs in homepage and library cards; original reference photos remain an optional secondary view in the inspector. No external image-generation service is involved.
 
 The green homepage model is E900BP nylon, with photo-based thicker lower shanks and branding. E3259BM is a silver metal mini with seven bridge through-holes and no lettering. `connector-detail.js` now reconstructs the perforated bridge within the original mounting envelope; the source CAD JSON remains unchanged. Earlier entries describing its bridge as unchanged or its added wordmark are superseded by this correction. Source: https://lockdowel.com/elementor-37341/ and its local original `store-01.jpg` / `store-04.jpg` photographs.
+
+## SCR36 sales preview / revision 02
+
+`public/projects/scr36/preview/scr36-film.mp4` is copied unchanged from `lockdowel-orchestrator/artifacts/lazy-susan-film-v2/Lockdowel-SCR36-Lazy-Susan-Web.mp4`, the user-approved 48-second, 1080p local production. `film-poster.png` is the matching production poster. `finished-concept.jpg` is a JPEG export of frame 1080 from the original one-off cabinet render (the finished shot is unchanged in revision 02). The landing page references the existing SCR36 PDF, workbook, and rendered sheet in its parent directory.
+
+The media remains within the unlisted `/projects/` route, covered by the production noindex header and server-side SCR36 password gate. No new external image generation, customer upload, or third-party media request was used.

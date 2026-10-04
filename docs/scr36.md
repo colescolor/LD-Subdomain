@@ -32,3 +32,7 @@ The 3D cabinet is hand-authored illustrative geometry, not a CAD conversion or m
 - Desktop/mobile screenshots reviewed. No JavaScript errors in the tested browser flow.
 
 The existing server on port 4173 was reused; no server was stopped or replaced. Concurrent user files remained untouched.
+
+## Password-protected sales presentation
+
+The new sales presentation is `/projects/scr36/preview/`. Its access gate also protects the existing SCR36 study and all source files in this folder, to prevent a direct drawing or video link bypassing access. The earlier study content and geometry are preserved. The gate runs in the local server and Vercel middleware; see the README's SCR36 sales presentation section for session-secret setup before deployment.
