@@ -41,3 +41,10 @@ These are contextual photos from the main website, not renderings of the supplie
 - https://lockdowel.com/wall-panels/
 
 The prototype does not copy the main site's numerical time-saving or structural-performance claims. The calculator's initial numbers are explicitly illustrative.
+
+## E3259BM homepage close-up
+
+- `public/assets/e3259bm-mesh.json`: the existing local manufacturer STEP tessellation from `../LAD/lockdowel-animator/.catalog/step-models/E3259BM.json`, used for the user's explicitly requested actual channel-lock showcase. The positions, normals, and triangle indices are unchanged. The browser applies a rigid 90-degree X rotation. 744 vertices / 692 triangles. Original STEP SHA-256: `838051f7d26acb8e08706cb9b4942ac34579ac58a99cc16e2aaf9e7c069274de`; copied JSON SHA-256: `85522454EB005602CC904699BCFB50BDCDF4AAAEB2C5DA102DF92C7FF796D84F`.
+- `public/assets/e3259bm-preview.png`: screenshot of that mesh in the locally authored Three.js viewer, used as the no-WebGL/no-JavaScript fallback.
+- Green is presentation highlighting. Timber texture, mounting bores, receiving channel, movements, and cabinet are authored visual explanations. They are not certified tooling data or an approved assembly specification.
+- No Storkcraft customer drawing, model, or source-sheet image is included in this change.

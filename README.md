@@ -3,15 +3,17 @@
 An independent local prototype for **build.lockdowel.com**. The public-facing identity is **Lockdowel Build — The Connection Studio**.
 
 
-## Storkcraft redesign in progress
+## Connector homepage
 
-The new source replaces the homepage with a four-chapter scroll story: finished dresser, separated structure, drawer detail, and reassembly. It adds manual view buttons, a separation slider, orbit dragging, drawing mode, three illustrative finishes, a drawing-sheet browser, and a featured `/drawings/storkcraft/` study. Existing concept studies and the brief/calculator remain available.
+The homepage now leads with the actual E3259BM CAD mesh, highlighted green, rotating slowly without wood. Drag or use the arrow buttons to orbit. Play runs a 16-second sequence: press the dowel ends into a bored panel, enter the receiving channel, slide beneath the retaining edges, then pull back as the wood grows into an illustrative open cabinet. A physical cutaway exposes the mounting bores and channel during the close-up. Pause, reset, chapter buttons, rotation toggle, and a scrubber remain available.
 
-**Source assets are awaiting explicit local-preview approval.** Automatic approval review blocked copying the Storkcraft PDF, sheet images, and model data into served assets. No Storkcraft assets have been copied. The build preflight intentionally preserves the existing `dist/` until all six approved assets are available; the running preview still shows the previous site. Production builds are disabled for this customer-source version pending a separate content release decision.
+On desktop, the stage occupies exactly the right half of the viewport and stays pinned through all four homepage text sections. Scrolling does not change playback. On mobile it becomes a pinned stage above the remaining story. Reduced-motion preferences disable the initial spin; manual controls remain usable. Rendering pauses offscreen and in background tabs. A connector still and link to the original film appear when the model cannot load.
 
-New files: `src/storkcraft-page.mjs`, `src/storkcraft.js`, and `src/storkcraft.css`. The renderer expects a compact model with `parts` (IDs, sizes, centers, optional arch shapes) and simplified `hardware` markers. It does not import the animator application or its credentials. The intended reference is the animator's September 28 v6 reconstruction. Exact cuts, interlocks, and manufacturing behavior are not modeled; source conflicts remain listed on the study page.
+The Storkcraft draft files are preserved in `src/storkcraft*`, outside active navigation and builds. No customer-source assets were copied. Its earlier missing-asset build block is removed because the homepage is now an independent product-hardware experience.
 
-Validation performed on the new UI: headless Chrome at 1440 × 1000 and 390 × 844 using synthetic test geometry and synthetic source sheets only. View buttons, slider completion, drawing-mode toggle, finish changes, scroll following, source-sheet tabs, reduced motion, and horizontal overflow checks passed without JavaScript errors. The real Storkcraft geometry and sheet assets have not been visually verified in this UI. Browser-script syntax checks and the existing two receiver-geometry checks passed. Full build/integration checks remain pending source-asset approval.
+New active files: `src/channel-home.mjs`, `src/channel-home.css`, `src/channel-home.js`, and `src/channel-geometry.js`. The original CAD positions, normals, and triangles are preserved; the renderer applies a rigid rotation. Wood, routing, travel, and cabinet geometry are authored illustrations, not production specifications.
+
+Validation: build and all nine integration/geometry checks pass. Local Chrome checks passed at 1440 × 1000 and 390 × 844 for the exact 50/50 sticky layout, play/pause, chapter views, scrubbing, drag rotation, no horizontal overflow, reduced motion, and model-load fallback. Revised mounting, locked, and cabinet frames were visually inspected. Later uninterrupted playback test attempts were interrupted by the local Chrome/Edge processes closing. That end-to-end playback run is not claimed as completed; each chapter frame and the timeline state/order checks passed.
 
 ## Run locally
 
@@ -28,7 +30,7 @@ Open **http://127.0.0.1:4173**. The server runs in the foreground; Ctrl+C stops 
 
 ## The experience
 
-- `/` — directed homepage with three fast sweeping shots of the finished boat-table concept and a clear application → study → project journey. The mechanism demonstration is deeper in the site.
+- `/` — actual E3259BM connector close-up, pinned interactive stage, mounting/locking sequence, and cabinet reveal.
 - `/explore/` — keyboard-accessible application explorer for furniture, cabinetry and wall panels, leading to relevant main-site pages.
 - `/drawings/` — a study index whose cards open dedicated HTML pages.
 - `/drawings/boat-table/`, `/drawings/open-cubby/`, `/drawings/angled-table/` — finished/exploded drawing views, overview, next step and explicit PDF download.
@@ -43,7 +45,8 @@ The header’s Online Store button points to the store entry on Lockdowel.com. P
 
 - `src/pages.mjs`: complete static page content, navigation, metadata, and page templates.
 - `src/styles.css`: responsive styling and reduced-motion behavior.
-- `src/scene.js`: original conceptual assembly model, cinematic camera shots, joint close-up and interactions.
+- `src/channel-home.*` and `src/channel-geometry.js`: featured connector story, CAD viewer, and illustrative assembly geometry.
+- `src/scene.js`: existing boat-table study, camera shots, joint close-up and interactions.
 - `src/receiver-geometry.js`: layered routed cavities with narrow mouths, wider receiving pockets and retaining lips.
 - `src/app.js`: browser interactions and application content.
 - `src/calculator.js`: validated scenario arithmetic.
@@ -80,18 +83,18 @@ npm run check
 
 Checks cover calculator positive/negative/zero/invalid inputs, HTML and local asset integrity, noindex defaults, structured-data parsing, production metadata switching, live loopback routes, 404 status, path rejection, video byte ranges and PDF delivery. Syntax checks were also run for browser scripts.
 
-The source video and the copied video have identical SHA-256 hashes. Browser visual review is **not completed**: the available browser-control process failed to initialize in this session. Desktop/mobile appearance and interactive WebGL behavior still need a real browser review. The responsive CSS and runtime fallback are implemented, but should not be confused with a completed visual test.
+The source video and copied video have identical SHA-256 hashes. The new homepage has completed desktop/mobile browser checks and screenshot review as described above. Earlier concept pages have not received a fresh browser visual review in this revision.
 
 ## Boundaries of this version
 
 This is a locally reviewable presentation website. It has no forms backend, CRM integration, content editor, login, email verification, public uploads, or real AI chat. The calculator uses browser-local input; it does not send data anywhere. External navigation occurs only when a visitor follows a main-site link.
 
-All 3D hardware is simplified and highlighted neon green for communication. Geometry and movements are not a CNC file, engineering validation, or installation instruction. The separate E3259BM video does not validate its compatibility with the table concept.
+The homepage uses the actual E3259BM CAD mesh highlighted green. Hardware in the older boat-table study remains simplified. Geometry and movements are not a CNC file, engineering validation, or installation instruction. The separate E3259BM video does not validate its compatibility with the table concept.
 
 ## Navigation and geometry revision
 
-The homepage has a single primary action: find your starting point. A persistent journey navigation and revised header connect all internal destinations. Source PDFs are secondary downloads on design-study pages, rather than the result of clicking a study card. The project page remains `/projects/boat-table/`.
+The homepage now leads with Play the connection, followed by application and project links. A persistent journey navigation and revised header connect all internal destinations. Source PDFs are secondary downloads on design-study pages, rather than the result of clicking a study card. The project page remains `/projects/boat-table/`.
 
 Receiving features are constructed as actual layered mesh openings and recessed pockets, not overlays on flat panels. Raycast tests verify all eight receivers and their retaining lips. Hardware and machining profiles remain illustrative rather than engineering specifications. The Joint detail control focuses on a receiving pocket. Cinematic home shots change every three seconds, while the project overview cycle is four seconds. Motion can be paused and reduced-motion preferences are respected.
 
-The updated build has 10 HTML pages. Browser visual review remains blocked by the browser tool initialization failure; no visual test is claimed.
+The build has 10 templated HTML pages, alongside any separately authored project pages. Homepage browser verification is recorded above.

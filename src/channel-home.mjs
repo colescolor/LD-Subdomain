@@ -35,7 +35,7 @@ export const channelHome = `
  <aside class="connection-stage-column" aria-label="Channel lock interactive showcase">
   <div class="connection-stage">
    <div class="connection-stage-top"><span><i></i> E3259BM</span><span data-channel-status>LOADING THE CONNECTION</span></div>
-   <div class="connection-viewport" data-channel-viewport role="img" aria-label="Rotating E3259BM channel lock. Drag to rotate, or use the view controls. Play to see mounting, channel engagement, and a cabinet reveal."><img class="connection-fallback" src="/assets/video-poster.jpg" alt="E3259BM connector demonstration" width="1280" height="720"><div class="connection-loading">THE CONNECTION<span>A small part. A closer look.</span></div></div>
+   <div class="connection-viewport" data-channel-viewport role="img" aria-label="Rotating E3259BM channel lock. Drag to rotate, or use the view controls. Play to see mounting, channel engagement, and a cabinet reveal."><img class="connection-fallback" src="/assets/e3259bm-preview.png" alt="Close-up of the actual E3259BM channel-lock CAD geometry" width="720" height="657"><div class="connection-loading">THE CONNECTION<span>A small part. A closer look.</span></div></div>
    <span class="connection-watermark" aria-hidden="true">E3259BM</span>
    <div class="connection-caption"><span data-channel-phase>00 / THE CHANNEL LOCK</span><p data-channel-caption>A little green part. A world of possibility.</p></div>
    <div class="connection-controls">
@@ -44,7 +44,7 @@ export const channelHome = `
     <div class="connection-chapters" role="group" aria-label="Sequence chapters"><button type="button" data-channel-step="0" aria-pressed="true">Inspect</button><button type="button" data-channel-step="4.4" aria-pressed="false">Mount</button><button type="button" data-channel-step="8.4" aria-pressed="false">Seat</button><button type="button" data-channel-step="10.7" aria-pressed="false">Lock</button><button type="button" data-channel-step="16" aria-pressed="false">Cabinet</button></div>
    </div>
    <div class="connection-stage-foot"><span>DRAG TO ROTATE <b>·</b> <button type="button" data-channel-orbit="-1" aria-label="Rotate view left">←</button><button type="button" data-channel-orbit="1" aria-label="Rotate view right">→</button></span><span data-channel-view-note>ACTUAL CONNECTOR CAD</span></div>
-   <a class="connection-fallback-link" href="/how-to/e3259bm/" hidden>Watch the connector film ↗</a>
+   <noscript><style>.connection-fallback{opacity:1}.connection-loading,.connection-controls,.connection-caption{display:none}.connection-fallback-link[hidden]{display:block!important}</style></noscript><a class="connection-fallback-link" href="/how-to/e3259bm/" hidden>Watch the connector film ↗</a>
   </div>
  </aside>
 </section>`;
