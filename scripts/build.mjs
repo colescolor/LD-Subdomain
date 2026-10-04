@@ -1,0 +1,20 @@
+import {mkdir,writeFile,cp,copyFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {join,dirname} from 'node:path';
+import {pages,shell} from '../src/pages.mjs';
+const root=dirname(dirname(fileURLToPath(import.meta.url)));
+const out=join(root,'dist');
+const production=process.argv.includes('--production');
+await mkdir(out,{recursive:true});
+await cp(join(root,'public'),out,{recursive:true});
+for(const file of ['app.js','scene.js','calculator.js','styles.css'])await copyFile(join(root,'src',file),join(out,file));
+await mkdir(join(out,'vendor'),{recursive:true});
+for(const file of ['three.module.js','three.core.js'])await copyFile(join(root,'node_modules/three/build',file),join(out,'vendor',file));
+await copyFile(join(root,'node_modules/three/LICENSE'),join(out,'vendor','THREE-LICENSE.txt'));
+for(const page of pages){const folder=join(out,page.path);await mkdir(folder,{recursive:true});await writeFile(join(folder,'index.html'),shell(page,production));}
+await writeFile(join(out,'404.html'),shell({path:'/404/',title:'Page not found | Lockdowel Build',description:'Find your next connection at Lockdowel Build.',private:true,body:'<section class="page-intro wrap"><p class="eyebrow">404 / A CONNECTION TO MAKE</p><h1>Let’s get you<br><span>back to building.</span></h1><p>This page could not be found.</p><a class="button" href="/" style="margin-top:30px">Return to the studio ↗</a></section>'},production));
+const sitemap=production?pages.filter(p=>!p.private).map(p=>`  <url><loc>https://build.lockdowel.com${p.path}</loc></url>`).join('\n'):'';
+await writeFile(join(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemap}\n</urlset>\n`);
+await writeFile(join(out,'robots.txt'),production?'User-agent: *\nAllow: /\nDisallow: /projects/\nSitemap: https://build.lockdowel.com/sitemap.xml\n':'User-agent: *\nDisallow: /\n');
+await writeFile(join(out,'assets/social-card.svg'),`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#111411"/><path d="M750 0V630M900 0V630M1050 0V630M600 160H1200M600 320H1200M600 480H1200" stroke="#36452b"/><text x="70" y="90" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#b1ff42">LOCKDOWEL / BUILD</text><text x="70" y="265" font-family="Arial,sans-serif" font-size="95" font-weight="bold" fill="#f2f3ed">MAKE THE NEXT</text><text x="70" y="365" font-family="Arial,sans-serif" font-size="95" font-weight="bold" fill="#b1ff42">CONNECTION.</text><text x="70" y="530" font-family="Arial,sans-serif" font-size="24" fill="#a9b0a4">Ideas. Drawings. A new way to see what you can build.</text></svg>`);
+console.log(`Built ${pages.length} pages in dist/ (${production?'production metadata; review before deployment':'local preview; noindex enabled'}).`);

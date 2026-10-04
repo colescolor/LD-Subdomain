@@ -1,0 +1,12 @@
+{
+  "name": "lockdowel-subdomain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --test scripts/check.test.mjs"
+  },
+  "dependencies": { "three": "0.185.1" }
+}
