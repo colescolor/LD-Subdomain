@@ -2,6 +2,17 @@
 
 An independent local prototype for **build.lockdowel.com**. The public-facing identity is **Lockdowel Build — The Connection Studio**.
 
+
+## Storkcraft redesign in progress
+
+The new source replaces the homepage with a four-chapter scroll story: finished dresser, separated structure, drawer detail, and reassembly. It adds manual view buttons, a separation slider, orbit dragging, drawing mode, three illustrative finishes, a drawing-sheet browser, and a featured `/drawings/storkcraft/` study. Existing concept studies and the brief/calculator remain available.
+
+**Source assets are awaiting explicit local-preview approval.** Automatic approval review blocked copying the Storkcraft PDF, sheet images, and model data into served assets. No Storkcraft assets have been copied. The build preflight intentionally preserves the existing `dist/` until all six approved assets are available; the running preview still shows the previous site. Production builds are disabled for this customer-source version pending a separate content release decision.
+
+New files: `src/storkcraft-page.mjs`, `src/storkcraft.js`, and `src/storkcraft.css`. The renderer expects a compact model with `parts` (IDs, sizes, centers, optional arch shapes) and simplified `hardware` markers. It does not import the animator application or its credentials. The intended reference is the animator's September 28 v6 reconstruction. Exact cuts, interlocks, and manufacturing behavior are not modeled; source conflicts remain listed on the study page.
+
+Validation performed on the new UI: headless Chrome at 1440 × 1000 and 390 × 844 using synthetic test geometry and synthetic source sheets only. View buttons, slider completion, drawing-mode toggle, finish changes, scroll following, source-sheet tabs, reduced motion, and horizontal overflow checks passed without JavaScript errors. The real Storkcraft geometry and sheet assets have not been visually verified in this UI. Browser-script syntax checks and the existing two receiver-geometry checks passed. Full build/integration checks remain pending source-asset approval.
+
 ## Run locally
 
 Double-click `Start Local Preview.cmd`, or run these commands in this folder:
@@ -17,9 +28,11 @@ Open **http://127.0.0.1:4173**. The server runs in the foreground; Ctrl+C stops 
 
 ## The experience
 
-- `/` — cinematic homepage with an original Three.js boat-table study, neon-green connectors, model controls, and drawing previews.
+- `/` — directed homepage with three fast sweeping shots of the finished boat-table concept and a clear application → study → project journey. The mechanism demonstration is deeper in the site.
 - `/explore/` — keyboard-accessible application explorer for furniture, cabinetry and wall panels, leading to relevant main-site pages.
-- `/drawings/` — three filterable drawing studies and the original downloadable PDFs.
+- `/drawings/` — a study index whose cards open dedicated HTML pages.
+- `/drawings/boat-table/`, `/drawings/open-cubby/`, `/drawings/angled-table/` — finished/exploded drawing views, overview, next step and explicit PDF download.
+- `/start-project/` — a local project-brief builder with downloadable text, then a deliberate contact handoff.
 - `/how-to/e3259bm/` — the unchanged supplied 40-second video, playback controls, and written overview.
 - `/projects/boat-table/` — hand-authored sample project presentation with drawing, interactive overview, review notes, and a separate connector-video example.
 - `/savings/` — assembly labor scenario calculator with explicit assumptions and a downloadable text result.
@@ -30,7 +43,8 @@ The header’s Online Store button points to the store entry on Lockdowel.com. P
 
 - `src/pages.mjs`: complete static page content, navigation, metadata, and page templates.
 - `src/styles.css`: responsive styling and reduced-motion behavior.
-- `src/scene.js`: original conceptual assembly model and interactions.
+- `src/scene.js`: original conceptual assembly model, cinematic camera shots, joint close-up and interactions.
+- `src/receiver-geometry.js`: layered routed cavities with narrow mouths, wider receiving pockets and retaining lips.
 - `src/app.js`: browser interactions and application content.
 - `src/calculator.js`: validated scenario arithmetic.
 - `content/projects.mjs`: reviewed drawing inventory and sample project content.
@@ -73,3 +87,11 @@ The source video and the copied video have identical SHA-256 hashes. Browser vis
 This is a locally reviewable presentation website. It has no forms backend, CRM integration, content editor, login, email verification, public uploads, or real AI chat. The calculator uses browser-local input; it does not send data anywhere. External navigation occurs only when a visitor follows a main-site link.
 
 All 3D hardware is simplified and highlighted neon green for communication. Geometry and movements are not a CNC file, engineering validation, or installation instruction. The separate E3259BM video does not validate its compatibility with the table concept.
+
+## Navigation and geometry revision
+
+The homepage has a single primary action: find your starting point. A persistent journey navigation and revised header connect all internal destinations. Source PDFs are secondary downloads on design-study pages, rather than the result of clicking a study card. The project page remains `/projects/boat-table/`.
+
+Receiving features are constructed as actual layered mesh openings and recessed pockets, not overlays on flat panels. Raycast tests verify all eight receivers and their retaining lips. Hardware and machining profiles remain illustrative rather than engineering specifications. The Joint detail control focuses on a receiving pocket. Cinematic home shots change every three seconds, while the project overview cycle is four seconds. Motion can be paused and reduced-motion preferences are respected.
+
+The updated build has 10 HTML pages. Browser visual review remains blocked by the browser tool initialization failure; no visual test is claimed.

@@ -31,3 +31,5 @@ test('local server returns pages, safe paths, video ranges and actual 404s',asyn
  const escape=await fetch(base+'/%2e%2e%5cpackage.json');assert.equal(escape.status,400);await escape.text();
  const head=await fetch(base+'/assets/boat-table-drawing.pdf',{method:'HEAD'});assert.equal(head.status,200);assert.equal(head.headers.get('content-type'),'application/pdf');
 });
+
+test('homepage directs visitors to HTML journeys and studies keep PDF downloads explicit',async()=>{const home=await readFile('dist/index.html','utf8');assert.match(home,/data-channel-home/);assert.match(home,/id="connection-progress"/);assert.match(home,/data-channel-play/);assert.doesNotMatch(home,/<video|href="[^" ]+\.pdf"/);for(const slug of ['boat-table','open-cubby','angled-table']){const detail=await readFile(`dist/drawings/${slug}/index.html`,'utf8');assert.match(detail,/Download source PDF/);assert.match(detail,/aria-label="Build journey"/);}const index=await readFile('dist/drawings/index.html','utf8');assert.doesNotMatch(index,/href="[^" ]+\.pdf"/);});
