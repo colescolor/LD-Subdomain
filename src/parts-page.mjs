@@ -1,0 +1,34 @@
+import {readFileSync} from 'node:fs';
+const catalog=JSON.parse(readFileSync(new URL('../public/assets/parts/catalog.json',import.meta.url),'utf8'));
+const parts=catalog.parts,ready=parts.filter(p=>p.model).length;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const categories=[...new Set(parts.map(p=>p.category))];
+function card(p){return `<article class="part-card" data-part-card="${p.id}" data-category="${esc(p.category)}" data-ready="${!!p.model}" data-search="${esc([p.sku,p.name,p.category,p.material].join(' ').toLowerCase())}">
+ <button class="part-select" type="button" data-part-select="${p.id}" aria-pressed="false" aria-label="${p.model?'View in 3D':'View reference'}: ${esc(p.sku||p.name)}">
+ <span class="part-art">${p.photo?`<img src="${p.photo}" alt="${esc(p.name)} product reference" width="300" height="300" loading="lazy">`:`<span class="part-no-photo">${esc(p.sku)}<small>PHOTO TO CONFIRM</small></span>`}<span class="part-mode ${p.model?'is-3d':''}">${p.model?'↻ 3D MODEL':'PHOTO REFERENCE'}</span></span>
+ <span class="part-card-copy"><span class="part-number">${esc(p.sku||'PART NUMBER VARIES')}</span><span class="part-name">${esc(p.name)}</span><span class="part-card-foot">${esc(p.category)} <b aria-hidden="true">↗</b></span></span>
+ </button><noscript><p>${esc(p.sku||'Part number varies')} · ${esc(p.name)}</p>${p.photo?`<img src="${p.photo}" alt="${esc(p.name)}" width="300" height="300" loading="lazy">`:''}</noscript></article>`;}
+export const partsPage={path:'/parts/',title:'3D parts library | Lockdowel Build',description:'Explore Lockdowel channel locks, H-clips, pins and housings in interactive 3D. Find parts by SKU, rotate each model and compare it with the product photo.',body:`
+<section class="parts-library" data-parts-library>
+ <header class="parts-intro"><div><p class="eyebrow"><span class="dot"></span> THE HARDWARE / UP CLOSE</p><h1>A small part.<br><span>A closer look.</span></h1><p>Pick a part. Give it a spin.<br>Find the connection you have in mind.</p></div><div class="parts-totals"><div><b>${ready}</b><span>INTERACTIVE MODELS</span></div><div><b>${parts.length}</b><span>STORE LISTINGS</span></div><a href="https://lockdowel.com/elementor-37341/">Visit the online store ↗</a></div></header>
+ <div class="parts-workbench">
+  <section class="parts-catalog" aria-label="Browse parts" data-parts-catalog>
+   <div class="parts-filter-bar"><label class="parts-search"><span aria-hidden="true">⌕</span><input type="search" data-parts-search placeholder="Search part number or name" aria-label="Search part number or name" autocomplete="off"></label>
+    <div class="parts-scopes" role="group" aria-label="Model availability"><button type="button" data-parts-scope="3d" aria-pressed="true">3D models <span>${ready}</span></button><button type="button" data-parts-scope="all" aria-pressed="false">All parts <span>${parts.length}</span></button></div>
+    <div class="parts-categories" role="group" aria-label="Part family"><button type="button" data-parts-category="All" aria-pressed="true">All families</button>${categories.map(c=>`<button type="button" data-parts-category="${esc(c)}" aria-pressed="false">${esc(c)}</button>`).join('')}</div>
+   </div>
+   <p class="parts-results" data-parts-count role="status">${parts.length} parts in the library</p>
+   <div class="parts-grid">${parts.map(card).join('')}</div>
+   <div class="parts-empty" hidden><h2>No parts found.</h2><p>Try a different part number or browse all families.</p><button type="button" data-parts-clear>Clear filters ↗</button></div>
+   <p class="parts-catalog-note">Part numbers are product SKUs, not individual serial numbers. Catalog references checked ${catalog.checkedOn}. <a href="${catalog.source}">Source: Lockdowel online store ↗</a></p>
+  </section>
+  <aside class="part-inspector" aria-label="Selected part" data-part-inspector>
+   <div class="part-inspector-top"><span class="eyebrow"><i class="dot"></i><span data-part-family>CHANNEL LOCKS</span></span><span class="part-basis" data-part-basis>REFERENCE MODEL</span></div>
+   <div class="part-display"><div class="part-canvas" data-part-canvas role="img" tabindex="0" aria-label="3D part viewer. Drag to rotate; use arrow keys to orbit."></div><img class="part-reference" data-part-reference src="/assets/parts/store-01.jpg" alt="E900BP product reference" width="300" height="300"><span class="part-display-status" data-part-status role="status">Loading the part…</span><span class="part-watermark" aria-hidden="true" data-part-watermark>E900BP</span><div class="part-view-tabs" role="group" aria-label="Part view"><button type="button" data-part-view="3d" aria-pressed="true">3D model</button><button type="button" data-part-view="photo" aria-pressed="false">Product photo</button></div></div>
+   <div class="part-orbit-controls" role="group" aria-label="3D view controls"><span>DRAG TO ROTATE</span><button type="button" data-part-orbit="-1" aria-label="Rotate part left">←</button><button type="button" data-part-orbit="1" aria-label="Rotate part right">→</button><button type="button" data-part-zoom="-1" aria-label="Zoom out">−</button><button type="button" data-part-zoom="1" aria-label="Zoom in">+</button><button type="button" data-part-spin aria-pressed="true">Pause spin</button><button type="button" data-part-reset>Reset</button></div>
+   <div class="part-info"><div class="part-info-heading"><div><p class="eyebrow">PART NUMBER</p><h2 data-part-sku>E900BP</h2></div><button type="button" data-part-copy aria-label="Copy part number">Copy ↗</button></div><h3 data-part-name>Nylon Barbed Channel Lock</h3><p data-part-note>Shape reconstructed from the store photograph. Internal features and proportions are illustrative.</p><div class="part-info-bottom"><span data-part-material>Nylon</span><a data-part-store href="https://lockdowel.com/elementor-37341/">Find in the store ↗</a></div><span class="part-copy-status" role="status" data-part-copy-status></span><button type="button" class="parts-back-to-list" data-parts-browse>Browse more parts ↓</button></div>
+  </aside>
+ </div>
+ <section class="parts-about"><p class="eyebrow">THE LIBRARY / ALWAYS GETTING CLOSER</p><h2>See the shape.<br><span>Understand the connection.</span></h2><p>Source CAD, CAD with added surface detail, and photo-based reference models are labeled individually. Use the current product documentation for dimensions, machining, and compatibility.</p><a class="text-link" href="/">Watch a connection come together <span>↗</span></a></section>
+ <noscript><style>.parts-filter-bar,.part-select,.part-inspector{display:none}.parts-workbench{display:block}.parts-grid{grid-template-columns:repeat(3,1fr)}.part-card noscript{display:block;padding:16px}</style><p>Browse the product references below. Enable JavaScript to search and rotate the 3D models.</p></noscript>
+</section>`};

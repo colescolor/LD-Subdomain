@@ -50,3 +50,15 @@ The prototype does not copy the main site's numerical time-saving or structural-
 - `public/assets/e3259bm-preview.png`: screenshot of the detailed presentation model in the locally authored Three.js viewer, used as the no-WebGL/no-JavaScript fallback.
 - Green is presentation highlighting. Timber texture, mounting bores, receiving channel and movements are authored visual explanations. The final shot stays on the same two-panel cutaway; the former cabinet reveal is no longer used. They are not certified tooling data or an approved assembly specification.
 - No Storkcraft customer drawing, model, or source-sheet image is included in this change.
+
+
+## 3D parts library / 2026-10-04
+
+- Inventory and 43 original reference photographs: https://lockdowel.com/elementor-37341/. Product-photo source URLs are recorded individually in `public/assets/parts/catalog.json`; image files are copied without modification. The purchasing storefront redirects to account login, so this inventory covers the public product showcase, not all size-specific purchase variants.
+- `src/parts-geometry.js`: independently authored illustrative meshes for 21 photo-referenced parts, including channel locks, H-clips, housings, pins, and spring pins. Dimensions used to construct those meshes are visual estimates except where explicitly present in product names. Internal geometry is illustrative and not tooling data.
+- E3259BM reuses the existing CAD-based, detailed homepage connector with a metal presentation finish. It is labeled CAD + detail.
+- `7000-short.json` and `8002-40-R5.json`: unchanged copies from `../LAD/lockdowel-animator/.catalog/step-models/`. 7000 is explicitly labeled as the available Short CAD variant, not assumed to match the store photo's length.
+- `vendor/RoomEnvironment.js`: copied during build from the installed Three.js examples, with only its module import redirected to the locally served Three.js bundle. Covered by the existing Three.js MIT license.
+- Catalog discrepancies: the LDST shelf-system photo has an E900BP-8 caption on the public store; the library identifies it from the photo filename and published catalog listing and preserves a note. E4005 has no product image; the E4008 image filename identifies a different cutter, so neither is presented as a verified product photograph. Three drawer-slide families lack size-specific SKUs in the public listing; no identifiers are invented.
+- Copied file SHA-256, `7000-short.json`: `bb37ea44b3df4005ec986861732a98b761c22333f1380763052e87fb0f4fc69c`.
+- Copied file SHA-256, `8002-40-R5.json`: `1d6917f053a552ebe83465ad87d606f77a090075094e5207733da305fe6e06e7`.

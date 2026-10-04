@@ -1,0 +1,710 @@
+{
+  "checkedOn": "2026-10-04",
+  "source": "https://lockdowel.com/elementor-37341/",
+  "parts": [
+    {
+      "id": "7023",
+      "sku": "7023",
+      "name": "Channel Lock Evaluation Kit",
+      "category": "Kits",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-00.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/7023-EV-Kit-Pkg-1-300x300.jpg",
+      "storeTitle": "7023 Channel Lock Evaluation Kit"
+    },
+    {
+      "id": "e900bp",
+      "sku": "E900BP",
+      "name": "Nylon Barbed Channel Lock",
+      "category": "Channel locks",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "channel",
+        "spacing": 32,
+        "radius": 4,
+        "post": 22
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-01.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E900BP-Nylon-Barbed-Channel-Lock-Box-of-2000-300x300.jpg",
+      "storeTitle": "E900BP Nylon Barbed Channel Lock (Box of 2000)"
+    },
+    {
+      "id": "e900bp-8",
+      "sku": "E900BP-8",
+      "name": "Short-post Nylon Channel Lock",
+      "category": "Channel locks",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "channel",
+        "spacing": 32,
+        "radius": 4,
+        "post": 8
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-02.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E900BP-8-Post-Nylon-Barbed-Channel-Lock-w-8mm-Post-Box-of-2000-300x300.jpg",
+      "storeTitle": "E900BP-8 Post Nylon Barbed Channel Lock w/ 8mm Post (Box of 2000)"
+    },
+    {
+      "id": "e900bm",
+      "sku": "E900BM",
+      "name": "Metal Barbed Channel Lock",
+      "category": "Channel locks",
+      "material": "Metal",
+      "basis": "Reference model",
+      "model": {
+        "type": "channel",
+        "spacing": 32,
+        "radius": 4,
+        "post": 22,
+        "perforated": true
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-03.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E900BM-Metal-Barbed-Channel-Lock-Box-of-500-300x300.jpg",
+      "storeTitle": "E900BM Metal Barbed Channel Lock (Box of 500)"
+    },
+    {
+      "id": "e3259bm",
+      "sku": "E3259BM",
+      "name": "Metal Mini Channel Lock",
+      "category": "Channel locks",
+      "material": "Metal",
+      "basis": "CAD + detail",
+      "model": {
+        "type": "detailed-cad",
+        "asset": "/assets/e3259bm-mesh.json"
+      },
+      "note": "CAD bridge and post envelope, with illustrative ridges and molded lettering.",
+      "photo": "/assets/parts/store-04.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/Metal-Channel-Lock-mini-E3259BM-300x300.jpg",
+      "storeTitle": "E3259BM Metal Mini Channel Lock (Box of 1000)"
+    },
+    {
+      "id": "e900bp-mini",
+      "sku": "E900BP-Mini",
+      "name": "Mini Nylon Channel Lock",
+      "category": "Channel locks",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "channel",
+        "spacing": 16,
+        "radius": 2.5,
+        "post": 15
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-05.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/Mini-H-clip-E900BP-Mini-300x300.jpg",
+      "storeTitle": "E900BP Mini Nylong Mini Barbed Channel Lock (Box of 2000)"
+    },
+    {
+      "id": "e900bm-mini",
+      "sku": "E900BM-Mini",
+      "name": "Mini Metal Channel Lock",
+      "category": "Channel locks",
+      "material": "Metal",
+      "basis": "Reference model",
+      "model": {
+        "type": "channel",
+        "spacing": 16,
+        "radius": 2.5,
+        "post": 15
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-06.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E900BMMini-Mini-Metal-Barbed-Channel-Lock-Box-of-2000-300x300.jpg",
+      "storeTitle": "E900BM Mini Metal Barbed Channel Lock (Box of 2000)"
+    },
+    {
+      "id": "e900dh-p",
+      "sku": "E900DH-P",
+      "name": "Double-headed Nylon Channel Lock",
+      "category": "Channel locks",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "double",
+        "perforated": false
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-07.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E900DH-P-Double-Headed-Nylon-Channel-Lock-Box-of-2000-300x300.jpg",
+      "storeTitle": "E900DH-P Double-Headed Nylon Channel Lock (Box of 2000)"
+    },
+    {
+      "id": "e900dh-m",
+      "sku": "E900DH-M",
+      "name": "Double-headed Metal Channel Lock",
+      "category": "Channel locks",
+      "material": "Metal",
+      "basis": "Reference model",
+      "model": {
+        "type": "double",
+        "perforated": true
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-08.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E900DH-M-Double-Headed-Metal-Channel-Lock-Box-of-500-300x300.jpg",
+      "storeTitle": "E900DH-M Double-headed Metal Channel Lock (Box of 500)"
+    },
+    {
+      "id": "e910bp",
+      "sku": "E910BP",
+      "name": "Nylon Barbed H-Clip",
+      "category": "H-clips",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "channel",
+        "spacing": 32,
+        "radius": 4,
+        "post": 24,
+        "hclip": true
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-09.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E910BP-Nylon-Barbed-H-Clip-Box-of-2000-300x300.jpg",
+      "storeTitle": "E910BP Nylon Barbed H-Clip (Box of 2000)"
+    },
+    {
+      "id": "e910dh-p",
+      "sku": "E910DH-P",
+      "name": "Double-headed Nylon H-Clip",
+      "category": "H-clips",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "double",
+        "hclip": true
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-10.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E910DH-P-Double-Headed-Nylon-H-Clip-Box-of-2000-300x300.jpg",
+      "storeTitle": "E910DH-P Double-Headed Nylon H-Clip (Box of 2000)"
+    },
+    {
+      "id": "ldst",
+      "sku": "LDST",
+      "name": "Shelf Fastener System",
+      "category": "Accessories",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "The store image identifies LDST; its caption repeats E900BP-8. Listed here as the shelf fastener shown in the catalog.",
+      "photo": "/assets/parts/store-11.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/LDST-Shelf-Fastener-System-Box-of-500-pairs-300x300.jpg",
+      "storeTitle": "E900BP-8 Post Nylon Barbed Channel Lock w/ 8mm Post (Box of 2000)"
+    },
+    {
+      "id": "e930ff",
+      "sku": "E930FF",
+      "name": "Face Frame Clip",
+      "category": "Channel locks",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "face-frame"
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-12.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E930FF-Face-Frame-Clip-Box-of-1000-1-300x300.jpg",
+      "storeTitle": "E930FF Face Frame Clip (Box of 1000)"
+    },
+    {
+      "id": "2023-m5",
+      "sku": "2023 M5",
+      "name": "Threaded Metal Pin",
+      "category": "Pins & housings",
+      "material": "Metal",
+      "basis": "Reference model",
+      "model": {
+        "type": "snap-pin",
+        "threaded": true
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-13.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/Metal-M5-10x8-pin-300x293.jpg",
+      "storeTitle": "2023 M5 10xM5 Metal Pin"
+    },
+    {
+      "id": "2023-8b",
+      "sku": "2023-8B",
+      "name": "Metal Barbed Pin",
+      "category": "Pins & housings",
+      "material": "Metal",
+      "basis": "Reference model",
+      "model": {
+        "type": "snap-pin"
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-14.png",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/2023-8B-10x8-Metal-Pin-Box-of-2000.png",
+      "storeTitle": "2023-8B 10x8 Metal Pin (Box of 2000)"
+    },
+    {
+      "id": "2001b",
+      "sku": "2001B",
+      "name": "Metal Snap Housing",
+      "category": "Pins & housings",
+      "material": "Metal",
+      "basis": "Reference model",
+      "model": {
+        "type": "housing",
+        "radius": 5,
+        "height": 10
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-15.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/2001B-10x8-connector_small-300x300.jpg",
+      "storeTitle": "2001B 10x8 Metal Housing (Box of 2000)"
+    },
+    {
+      "id": "2023dh-90",
+      "sku": "2023DH-90",
+      "name": "Double-headed Metal Pin",
+      "category": "Pins & housings",
+      "material": "Metal",
+      "basis": "Reference model",
+      "model": {
+        "type": "double-pin"
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-16.png",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/2023DH-90-10x8-Double-Headed-Pin-Box-of-1000-1-300x300.png",
+      "storeTitle": "2023DH-90 Double-Headed Pin (Box of 1000)"
+    },
+    {
+      "id": "4001",
+      "sku": "4001",
+      "name": "8 mm Nylon Cinch Housing",
+      "category": "Pins & housings",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "housing",
+        "radius": 4,
+        "height": 9
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-17.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/4001-Nylon-Cinch-Housing-8mm-Box-of-2000-300x293.jpg",
+      "storeTitle": "4001 Nylon Cinch Housing 8mm (Box of 2000)",
+      "color": "#b5cc80"
+    },
+    {
+      "id": "4023",
+      "sku": "4023",
+      "name": "8 mm Nylon Cinch Pin",
+      "category": "Pins & housings",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "cinch",
+        "radius": 4,
+        "length": 28
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-18.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/4023-Nylon-Cinch-Pin-8mm-Box-of-2000-300x300.jpg",
+      "storeTitle": "4023 Nylon Cinch Pin 8mm (Box of 2000)",
+      "color": "#b5cc80"
+    },
+    {
+      "id": "5001",
+      "sku": "5001",
+      "name": "10 mm Nylon Cinch Housing",
+      "category": "Pins & housings",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "housing",
+        "radius": 5,
+        "height": 10
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-19.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/5001-Cinch-Pin-Housing-10mm-300x300.jpg",
+      "storeTitle": "5001 Nylon Cinch Housing 10mm (Box of 2000)",
+      "color": "#b5cc80"
+    },
+    {
+      "id": "5023",
+      "sku": "5023",
+      "name": "10 mm Nylon Cinch Pin",
+      "category": "Pins & housings",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "cinch",
+        "radius": 5,
+        "length": 30
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-20.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/5023-Nylon-Cinch-Pin-10mm-Box-of-2000-278x300.jpg",
+      "storeTitle": "5023 Nylon Cinch Pin 10mm (Box of 2000)"
+    },
+    {
+      "id": "7000",
+      "sku": "7000",
+      "name": "Back Panel Fastener",
+      "category": "Pins & housings",
+      "material": "CAD finish",
+      "basis": "Source CAD",
+      "model": {
+        "type": "cad",
+        "asset": "/assets/parts/7000-short.json",
+        "rotation": [
+          -1.57079632679,
+          0,
+          0
+        ]
+      },
+      "note": "The available manufacturer file is the 7000 Short variant. The store photo may show a different length.",
+      "photo": "/assets/parts/store-21.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/7000-Back-Panel-Fastener-Box-of-2000-300x300.jpg",
+      "storeTitle": "7000 Back Panel Fastener (Box of 2000)"
+    },
+    {
+      "id": "e85-40bp",
+      "sku": "E85-40BP",
+      "name": "Straight Barbed Connector",
+      "category": "Pins & housings",
+      "material": "Nylon",
+      "basis": "Reference model",
+      "model": {
+        "type": "straight"
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-22.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/Connector-E85-40BP-Straight-barbed-connector-1-300x300.jpg",
+      "storeTitle": "E85-40BP Straight Barbed Connector (Box of 2000)"
+    },
+    {
+      "id": "drawer-slide-23",
+      "sku": null,
+      "name": "50 lb Side-mount Drawer Slide",
+      "category": "Drawer hardware",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "The public store lists this product family without a length-specific part number. Choose a size in the store to confirm the SKU.",
+      "photo": "/assets/parts/store-23.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/Side-Mount-Soft-Close-50lb-Full-Extension-Drawer-Slide-Box-of-10-pairs-300x300.jpg",
+      "storeTitle": "Side Mount Soft close 50 lb Full Extension Drawer Slide (Box of 10 pairs)"
+    },
+    {
+      "id": "drawer-slide-24",
+      "sku": null,
+      "name": "100 lb Side-mount Drawer Slide",
+      "category": "Drawer hardware",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "The public store lists this product family without a length-specific part number. Choose a size in the store to confirm the SKU.",
+      "photo": "/assets/parts/store-24.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/Side-Mount-Box-Soft-Close-100lb-Full-Extension-Box-of-10-Pairs-300x300.jpg",
+      "storeTitle": "Side Mount Box Soft Close 100 lb Full Extension (Box of 10 Pairs)"
+    },
+    {
+      "id": "drawer-slide-25",
+      "sku": null,
+      "name": "100 lb Undermount Drawer Slide",
+      "category": "Drawer hardware",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "The public store lists this product family without a length-specific part number. Choose a size in the store to confirm the SKU.",
+      "photo": "/assets/parts/store-25.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/Undermount-Box-3D-Soft-Close-100lb-Full-Extension-dk-gray-Add-LDCLIP-300x258.jpg",
+      "storeTitle": "Undermount Box 3D Soft Close 100lb Full Extension (Box of 10 Pairs) - Add LDCLIP"
+    },
+    {
+      "id": "ldscu_clip",
+      "sku": "LDSCU_Clip",
+      "name": "3-directional Adjustment Clips",
+      "category": "Drawer hardware",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-26.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/LDSCU-Clip-3-Directional-Adjustment-Clips-for-LDSCU-3D-drawer-slides-Box-of-10-Pairs-1-300x300.jpg",
+      "storeTitle": "LDSCU_Clip 3-Directional Adjustment Clips for LDSCU-3D drawer slides (Box of 10 Pairs)"
+    },
+    {
+      "id": "ldspacer",
+      "sku": "LDSpacer",
+      "name": "Stackable Drawer Slide Spacer",
+      "category": "Drawer hardware",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-27.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/LDSpacer-1-222-Stackable-Drawer-Slide-Spacer-Box-of-500-300x230.jpg",
+      "storeTitle": "LDSpacer 1/2\" Stackable Drawer Slide Spacer (Box of 500)"
+    },
+    {
+      "id": "8002-30",
+      "sku": "8002-30",
+      "name": "8 × 30 mm Spring Pin",
+      "category": "Pins & housings",
+      "material": "Metal",
+      "basis": "Reference model",
+      "model": {
+        "type": "spring",
+        "radius": 4,
+        "length": 30
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-28.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/8002-30-Spring-Pin-8mm-x-30mm-Box-of-2000-300x300.jpg",
+      "storeTitle": "8002-30 Spring Pin 8mm x 30mm (Box of 2000)"
+    },
+    {
+      "id": "8002-40-r5",
+      "sku": "8002-40-R5",
+      "name": "8 × 40 mm Spring Pin",
+      "category": "Pins & housings",
+      "material": "Metal",
+      "basis": "Source CAD",
+      "model": {
+        "type": "cad",
+        "asset": "/assets/parts/8002-40-R5.json",
+        "rotation": [
+          1.57079632679,
+          0,
+          0
+        ]
+      },
+      "note": "Model from the available 8002-40-R5 manufacturer STEP tessellation.",
+      "photo": "/assets/parts/store-29.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/8002-40-R5-Spring-Pin-8mm-x-40mm-Box-of-2000-300x300.jpg",
+      "storeTitle": "8002-40-R5 Spring Pin 8mm x 40mm (Box of 2000)"
+    },
+    {
+      "id": "8005-36",
+      "sku": "8005-36",
+      "name": "5 × 36 mm Spring Pin",
+      "category": "Pins & housings",
+      "material": "Metal",
+      "basis": "Reference model",
+      "model": {
+        "type": "spring",
+        "radius": 2.5,
+        "length": 36
+      },
+      "note": "Shape reconstructed from the store photograph. Internal features and proportions are illustrative.",
+      "photo": "/assets/parts/store-30.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/8005-36-Spring-Pin-5mm-x-36mm-Box-of-2000-300x300.jpg",
+      "storeTitle": "8005-36 Spring Pin 5mm x 36mm (Box of 2000)"
+    },
+    {
+      "id": "e1000-b",
+      "sku": "E1000-B",
+      "name": "T-slot Router Bit",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-31.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E1000-B-T-slot-Router-Bit-3-822-Shank-x-322L-x-8.1mm-300x300.jpg",
+      "storeTitle": "E1000-B T-slot Router Bit (3/8\" Shank x 3\" L x 8.1mm)"
+    },
+    {
+      "id": "e1000-b50",
+      "sku": "E1000-B50",
+      "name": "Floating-head T-slot Router Bit",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-32.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E1000-B50-T-slot-Router-Bit-for-Benz-Floating-Head-3-822-Shank-x-50mm-L-x-8.1mm-300x300.jpg",
+      "storeTitle": "E1000-B50 T-slot Router Bit for Benz Floating Head (3/8\" Shank x 50mm L x 8.1mm)"
+    },
+    {
+      "id": "e1000-bm",
+      "sku": "E1000-BM",
+      "name": "Ultimax-coated T-slot Router Bit",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-33.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E1000-BM-T-slot-Router-Bit-w-Ultimax-Coating-3-822-Shank-x-322L-x-8.1mm-300x300.jpg",
+      "storeTitle": "E1000-BM T-slot Router Bit w/ Ultimax Coating (3/8\" Shank x 3\" L x 8.1mm)"
+    },
+    {
+      "id": "e1000-b-eu",
+      "sku": "E1000-B-EU",
+      "name": "Metric T-slot Router Bit",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-34.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E1000-B-EU-T-slot-Router-Bit-9.52mm-Shank-x-76mm-L-x-8.1mm-300x300.jpg",
+      "storeTitle": "E1000-B-EU T-slot Router Bit (9.52mm Shank x 76mm L x 8.1mm)"
+    },
+    {
+      "id": "e1000-f",
+      "sku": "E1000-F",
+      "name": "1/2-inch Shank T-slot Router Bit",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-35.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E1000-F-T-slot-Router-Bit-1-222-Shank-x-322-L-x-8.15mm-300x300.jpg",
+      "storeTitle": "E1000-F T-slot Router Bit (1/2\" Shank x 3\" L x 8.15mm)"
+    },
+    {
+      "id": "e1000-e",
+      "sku": "E1000-E",
+      "name": "T-slot Router Bit for E900BP",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-36.png",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E1000-E-T-slot-Router-Bit-for-E900BP-Only-3-822-Shank-x-322-L-x-8.3mm-274x300.png",
+      "storeTitle": "E1000-E T-slot Router Bit (for E900BP Only) 3/8\" Shank x 3\" L x 8.3mm"
+    },
+    {
+      "id": "e1000-g",
+      "sku": "E1000-G",
+      "name": "Set-screw T-slot Router Bit",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-37.png",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E1000-G-T-slot-Router-Bit-w-set-screw-for-Benz-Floating-Head-10mm-Shank-x-62mm-L-x-8.15mm-300x300.png",
+      "storeTitle": "E1000-G T-slot Router Bit w/ set screw for Benz Floating Head (10mm Shank x 62mm L x 8.15mm)"
+    },
+    {
+      "id": "e1000-h",
+      "sku": "E1000-H",
+      "name": "T-slot Router Bit for E3259BM",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-38.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E1000-H-T-slot-Router-Bit-for-E3259BM-Only-1-422-Shank-x-222-L-x-5.3mm-1-300x300.jpg",
+      "storeTitle": "E1000-H T-slot Router Bit (for E3259BM Only) 1/4\" Shank x 2\" L x 5.3mm"
+    },
+    {
+      "id": "e2000",
+      "sku": "E2000",
+      "name": "Mini T-slot Router Bit",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-39.jpg",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E2000-T-slot-Router-Bit-1-422-Shank-x-2.522-L-x-5.1mm-300x255.jpg",
+      "storeTitle": "E2000 T-slot Router Bit (1/4\" Shank x 2.5\" L x 5.1mm)"
+    },
+    {
+      "id": "e4005",
+      "sku": "E4005",
+      "name": "5 mm Threading Router Bit",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "The store currently supplies no product photograph.",
+      "photo": null,
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/Image-Coming-Soon-300x300.jpg",
+      "storeTitle": "E4005 Threading Router Bit (5mm)"
+    },
+    {
+      "id": "e4008",
+      "sku": "E4008",
+      "name": "8 mm Threading Router Bit",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "The store photograph is labeled as a different router bit. A verified photo and model are still needed.",
+      "photo": null,
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/E1000-H-EU-T-slot-Router-Bit-for-E3259BM-Only-6.35mm-Shank-x-63.5mm-x-5.7mm-300x300.jpg",
+      "storeTitle": "E4008 Threading Router Bit (8mm)"
+    },
+    {
+      "id": "lz1000-btc",
+      "sku": "LZ1000-BTC",
+      "name": "Tungsten-carbide T-slot Router Bit",
+      "category": "Tooling",
+      "material": "",
+      "basis": "Photo reference",
+      "model": null,
+      "note": "Store reference. A verified model is not available in this library yet.",
+      "photo": "/assets/parts/store-42.png",
+      "source": "https://lockdowel.com/elementor-37341/",
+      "imageSource": "https://lockdowel.com/wp-content/uploads/2026/02/LZ1000-BTC-T-Slot-Router-Bit-Tungsten-Carbide-12.7mm-Shank-x-70mm-L-x-8.2mm-1-1.png",
+      "storeTitle": "LZ1000-BTC T-slot Router Bit Tungsten Carbide (12.7mm Shank x 70mm L x 8.2mm)"
+    }
+  ]
+}

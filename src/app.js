@@ -33,3 +33,6 @@ $$('[data-sheet]').forEach(button=>button.addEventListener('click',()=>{const pr
 // The homepage connector scene is independent of customer project assets.
 const channelRoot=document.querySelector('[data-channel-home]');
 if(channelRoot)import('./channel-home.js').then(({initChannelHome})=>initChannelHome(channelRoot,{paused:motionPaused})).catch(()=>{channelRoot.querySelector('.connection-stage').classList.add('is-fallback');channelRoot.querySelector('.connection-loading')?.remove();channelRoot.querySelector('[data-channel-status]').textContent='WATCH THE ORIGINAL FILM';channelRoot.querySelector('.connection-fallback-link').hidden=false;channelRoot.querySelectorAll('button,input').forEach(b=>b.disabled=true);});
+
+const partsRoot=document.querySelector('[data-parts-library]');
+if(partsRoot)import('./parts-library.js').then(({initPartsLibrary})=>initPartsLibrary(partsRoot,{paused:motionPaused})).catch(()=>{partsRoot.querySelector('[data-part-status]').textContent='3D is unavailable. Browse the product reference photos below.';});

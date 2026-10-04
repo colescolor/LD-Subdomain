@@ -1,4 +1,4 @@
-import {mkdir,writeFile,cp,copyFile} from 'node:fs/promises';
+import {mkdir,writeFile,readFile,cp,copyFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join,dirname} from 'node:path';
 import {pages,shell} from '../src/pages.mjs';
@@ -10,9 +10,10 @@ const production=productionBuild();
 const domain=siteOrigin();
 await mkdir(out,{recursive:true});
 await cp(join(root,'public'),out,{recursive:true});
-for(const file of ['app.js','scene.js','calculator.js','receiver-geometry.js','styles.css','guides.css','inquiry.css','inquiry.js','measurement.js','channel-home.js','channel-geometry.js','connector-detail.js','channel-home.css'])await copyFile(join(root,'src',file),join(out,file));
+for(const file of ['app.js','scene.js','calculator.js','receiver-geometry.js','styles.css','guides.css','inquiry.css','inquiry.js','measurement.js','channel-home.js','channel-geometry.js','connector-detail.js','channel-home.css','parts-library.js','parts-library.css','parts-geometry.js'])await copyFile(join(root,'src',file),join(out,file));
 await mkdir(join(out,'vendor'),{recursive:true});
 for(const file of ['three.module.js','three.core.js'])await copyFile(join(root,'node_modules/three/build',file),join(out,'vendor',file));
+await writeFile(join(out,'vendor','RoomEnvironment.js'),(await readFile(join(root,'node_modules/three/examples/jsm/environments/RoomEnvironment.js'),'utf8')).replace("from 'three'","from './three.module.js'"));
 await copyFile(join(root,'node_modules/three/LICENSE'),join(out,'vendor','THREE-LICENSE.txt'));
 await copyFile(join(root,'node_modules/@vercel/analytics/dist/index.mjs'),join(out,'vendor','vercel-analytics.js'));
 await copyFile(join(root,'node_modules/@vercel/analytics/LICENSE'),join(out,'vendor','VERCEL-ANALYTICS-LICENSE.txt'));

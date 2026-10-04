@@ -4,31 +4,46 @@ export const channelHome = `
   <section class="connection-chapter connection-intro" id="connection-start">
    <p class="connection-kicker"><i></i> LOCKDOWEL / THE CONNECTION STUDIO</p>
    <h1>Small part.<br>Big <em>possibilities.</em></h1>
-   <p>Meet the connection<br>behind what comes next.</p>
+   <p>Get close to the connection.<br>Then see where it can take you.</p>
    <button class="connection-play-link" type="button" data-channel-start><span>▶</span> Watch it come together</button>
-   <a class="connection-scroll" href="#connection-movement">Explore the connection <span>↓</span></a>
-   <div class="connection-spec"><span>E3259BM</span><span>CHANNEL LOCK / INTERACTIVE 3D</span></div>
+   <a class="connection-text-button" href="/parts/">View our 3D library <span>↗</span></a>
+   <div class="connection-quick-links"><a href="#connection-movement">The parts ↓</a><a href="#connection-scale">The ideas ↓</a><a href="#connection-next">Your project ↓</a></div>
+   <div class="connection-spec"><span>E3259BM</span><span>DRAG THE MODEL. SEE THE CONNECTION.</span></div>
   </section>
-  <section class="connection-chapter" id="connection-movement">
-   <p class="connection-kicker">01 / FROM A PART TO A CONNECTION</p>
-   <h2>Push in.<br>Seat.<br><em>Slide home.</em></h2>
-   <p>Two dowel ends meet the wood. The head enters the routed channel. A short slide brings the connection into place.</p>
-   <p>Play the sequence on the right, or move through it one moment at a time.</p>
-   <button type="button" class="connection-text-button" data-channel-jump="7.8">Look inside the joint <span>↗</span></button>
+  <section class="connection-chapter connection-discover" id="connection-movement">
+   <p class="connection-kicker">01 / GET YOUR HANDS ON THE HARDWARE</p>
+   <h2>A whole library.<br><em>Every angle.</em></h2>
+   <p>Spin the parts. Compare the shapes. Find the part number. Explore 24 interactive models in one place.</p>
+   <div class="connection-parts-preview">
+    <a href="/parts/#e900bp"><img src="/assets/parts/store-01.jpg" width="300" height="300" alt="Green E900BP channel lock" loading="lazy"><span>E900BP <b>↗</b></span></a>
+    <a href="/parts/#e3259bm"><img src="/assets/parts/store-04.jpg" width="300" height="300" alt="Metal E3259BM channel lock" loading="lazy"><span>E3259BM <b>↗</b></span></a>
+    <a href="/parts/#e910bp"><img src="/assets/parts/store-09.jpg" width="300" height="300" alt="E910BP H-clip" loading="lazy"><span>E910BP <b>↗</b></span></a>
+   </div>
+   <a class="connection-text-button" href="/parts/">View our 3D library <span>↗</span></a>
   </section>
-  <section class="connection-chapter" id="connection-scale">
-   <p class="connection-kicker">02 / THE BIGGER PICTURE</p>
-   <h2>Two panels.<br><em>One clean<br>connection.</em></h2>
-   <p>Follow one channel lock from the first push to the final slide. Pull back and turn the finished joint to see how the two panels connect.</p>
-   <button type="button" class="connection-text-button" data-channel-jump="16">Explore the joint <span>↗</span></button>
-   <a href="/how-to/e3259bm/" class="connection-text-button">Watch the original film <span>↗</span></a>
+  <section class="connection-chapter connection-discover" id="connection-scale">
+   <p class="connection-kicker">02 / FROM HARDWARE TO AN IDEA</p>
+   <h2>See the parts.<br><em>Picture the whole.</em></h2>
+   <p>Explore design studies, pull apart the drawings, and see how a connection fits into a larger idea.</p>
+   <a class="connection-study-preview" href="/drawings/boat-table/"><img src="/assets/boat-table-exploded.png" width="1191" height="842" alt="Exploded boat table design study showing its panels and connections" loading="lazy"><span>BOAT TABLE / DESIGN STUDY <b>↗</b></span></a>
+   <div class="connection-study-links"><a href="/drawings/open-cubby/">Open cubby ↗</a><a href="/drawings/angled-table/">Angled table ↗</a><a href="/projects/boat-table/">Interactive project ↗</a></div>
+   <a class="connection-text-button" href="/drawings/">Look at our design studies <span>↗</span></a>
+  </section>
+  <section class="connection-chapter connection-discover" id="connection-tools">
+   <p class="connection-kicker">03 / FIND YOUR NEXT STEP</p>
+   <h2>Put the idea<br><em>to work.</em></h2>
+   <a class="connection-application-preview" href="/explore/"><img src="/assets/cabinetry.jpg" width="640" height="400" alt="Kitchen cabinetry application" loading="lazy"><span><strong>Explore applications</strong><small>Furniture. Cabinetry. Wall panels.</small></span><b>↗</b></a>
+   <div class="connection-resource-links">
+    <a href="/guides/"><span><strong>Read the technical guides</strong><small>Connections, assembly, and planning.</small></span><b>↗</b></a>
+    <a href="/how-to/e3259bm/"><span><strong>Watch the original assembly film</strong><small>See the E3259BM connection in motion.</small></span><b>↗</b></a>
+    <a href="/savings/"><span><strong>Explore assembly savings</strong><small>Try your own time and labor scenario.</small></span><b>↗</b></a>
+   </div>
   </section>
   <section class="connection-chapter connection-last" id="connection-next">
-   <p class="connection-kicker">03 / YOUR NEXT CONNECTION</p>
-   <h2>Now imagine<br><em>your project.</em></h2>
-   <p>Furniture. Cabinetry. Something nobody has built yet. Start with the idea, then find the connection.</p>
+   <p class="connection-kicker">04 / YOUR NEXT CONNECTION</p>
+   <h2>What will<br><em>you build?</em></h2>
+   <p>Bring your drawing, your material, or your first idea. Let's find the next step for your project.</p>
    <a class="button" href="/start-project/">Bring your project <span>↗</span></a>
-   <a href="/explore/" class="connection-text-button">Explore applications <span>↗</span></a>
    <p class="connection-fine">E3259BM CAD with photo-based surface detail. Green, ridges, branding, wood, routing, and movement are illustrative.</p>
   </section>
  </div>
