@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
-    "check": "node --test scripts/check.test.mjs scripts/geometry.test.mjs scripts/channel-home.test.mjs"
+    "check": "node --test scripts/check.test.mjs scripts/geometry.test.mjs scripts/channel-home.test.mjs scripts/scr36-connectors.test.mjs scripts/seo.test.mjs scripts/inquiry.test.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "three": "0.185.1"
   }
 }

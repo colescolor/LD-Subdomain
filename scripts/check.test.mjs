@@ -14,11 +14,11 @@ test('calculator handles positive, negative, zero and invalid scenarios',()=>{
 });
 test('every local link and media reference resolves; metadata is unique and local pages noindex',async()=>{
  const titles=new Set();for(const page of pages){const html=await readFile(join('dist',page.path,'index.html'),'utf8');assert.match(html,/<meta name="robots" content="noindex, nofollow">/);assert.equal((html.match(/<h1[ >]/g)||[]).length,1);assert.ok(!titles.has(page.title));titles.add(page.title);
- for(const [,url]of html.matchAll(/(?:href|src)="(\/[^"#]*)"/g)){const file=url.endsWith('/')?url+'index.html':url;assert.ok((await stat(join('dist',file))).isFile(),`Missing ${url} on ${page.path}`);}
+ for(const [,url]of html.matchAll(/(?:href|src)="(\/[^"#]*)"/g)){const path=new URL(url.replaceAll('&amp;','&'),'https://build.lockdowel.com').pathname;const file=path.endsWith('/')?path+'index.html':path;assert.ok((await stat(join('dist',file))).isFile(),`Missing ${url} on ${page.path}`);}
  const json=html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s);assert.equal(JSON.parse(json[1])['@type'],'WebPage');
  }
  assert.match(shell(pages[0],true),/content="index, follow"/);assert.match(shell(pages.find(p=>p.private),true),/content="noindex, nofollow"/);
- assert.match(await readFile('dist/robots.txt','utf8'),/Disallow: \//);
+ assert.match(await readFile('dist/robots.txt','utf8'),/Allow: \//);assert.doesNotMatch(await readFile('dist/robots.txt','utf8'),/Sitemap:/);
 });
 test('local server returns pages, safe paths, video ranges and actual 404s',async(t)=>{
  const server=createLocalServer();await new Promise(r=>server.listen(0,'127.0.0.1',r));t.after(()=>new Promise(r=>server.close(r)));const base=`http://127.0.0.1:${server.address().port}`;
