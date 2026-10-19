@@ -1,3 +1,4 @@
+import {buildDrawers} from './build-drawers.mjs';
 import {mkdir,writeFile,readFile,cp,copyFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join,dirname} from 'node:path';
@@ -19,7 +20,8 @@ await copyFile(join(root,'node_modules/@vercel/analytics/dist/index.mjs'),join(o
 await copyFile(join(root,'node_modules/@vercel/analytics/LICENSE'),join(out,'vendor','VERCEL-ANALYTICS-LICENSE.txt'));
 for(const page of pages){const folder=join(out,page.path);await mkdir(folder,{recursive:true});await writeFile(join(folder,'index.html'),shell(page,production));}
 await writeFile(join(out,'404.html'),shell({path:'/404/',title:'Page not found | Lockdowel Build',description:'Find your next connection at Lockdowel Build.',private:true,body:'<section class="page-intro wrap"><p class="eyebrow">404 / A CONNECTION TO MAKE</p><h1>Let’s get you<br><span>back to building.</span></h1><p>This page could not be found.</p><a class="button" href="/" style="margin-top:30px">Return to the studio ↗</a></section>'},production));
-const sitemap=production?pages.filter(p=>!p.private).map(p=>`  <url><loc>${domain}${p.path}</loc></url>`).join('\n'):'';
+const drawerPaths=await buildDrawers(out,production);
+const sitemap=production?pages.filter(p=>!p.private).map(p=>`  <url><loc>${domain}${p.path}</loc></url>`).concat(drawerPaths.map(p=>`  <url><loc>https://subdomain-theta.vercel.app${p}</loc></url>`)).join('\n'):'';
 await writeFile(join(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemap}\n</urlset>\n`);
 await writeFile(join(out,'robots.txt'),`User-agent: *\nAllow: /\nDisallow: /api/\n${production?'Sitemap: '+domain+'/sitemap.xml\n':''}`);
 await writeFile(join(out,'assets/social-card.svg'),`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#111411"/><path d="M750 0V630M900 0V630M1050 0V630M600 160H1200M600 320H1200M600 480H1200" stroke="#36452b"/><text x="70" y="90" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#b1ff42">LOCKDOWEL / BUILD</text><text x="70" y="265" font-family="Arial,sans-serif" font-size="95" font-weight="bold" fill="#f2f3ed">MAKE THE NEXT</text><text x="70" y="365" font-family="Arial,sans-serif" font-size="95" font-weight="bold" fill="#b1ff42">CONNECTION.</text><text x="70" y="530" font-family="Arial,sans-serif" font-size="24" fill="#a9b0a4">Ideas. Drawings. A new way to see what you can build.</text></svg>`);

@@ -1,0 +1,4101 @@
+[
+  {
+    "id": "channel-lock-flip-front",
+    "title": "6-inch flip-front drawer",
+    "family": "Channel lock",
+    "sku": "E900BP",
+    "inner": 633,
+    "t": 19,
+    "h": 152.5,
+    "d": 350,
+    "slabW": 720,
+    "slabH": 250,
+    "flip": true,
+    "support": true,
+    "pin": "8002-40-R5",
+    "pivot": [
+      0,
+      120.5,
+      -165.5
+    ],
+    "index": 1,
+    "parts": [
+      {
+        "id": "left",
+        "size": [
+          19,
+          152.5,
+          350
+        ],
+        "p": [
+          -326,
+          76.25,
+          0
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              9,
+              7,
+              352
+            ],
+            "p": [
+              5.5,
+              -60.75,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "right",
+        "size": [
+          19,
+          152.5,
+          350
+        ],
+        "p": [
+          326,
+          76.25,
+          0
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              9,
+              7,
+              352
+            ],
+            "p": [
+              -5.5,
+              -60.75,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "back",
+        "size": [
+          633,
+          152.5,
+          19
+        ],
+        "p": [
+          0,
+          76.25,
+          165.5
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              634,
+              7,
+              8
+            ],
+            "p": [
+              0,
+              -60.75,
+              -6
+            ]
+          }
+        ]
+      },
+      {
+        "id": "front",
+        "size": [
+          633,
+          152.5,
+          19
+        ],
+        "p": [
+          0,
+          76.25,
+          -165.5
+        ],
+        "color": "#d1b387",
+        "grooves": [
+          {
+            "size": [
+              634,
+              7,
+              8
+            ],
+            "p": [
+              0,
+              -60.75,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bottom",
+        "size": [
+          645,
+          6.4,
+          324
+        ],
+        "p": [
+          0,
+          15.5,
+          0
+        ],
+        "color": "#eee0c4",
+        "grooves": []
+      },
+      {
+        "id": "support",
+        "size": [
+          104,
+          12.7,
+          312
+        ],
+        "p": [
+          0,
+          5.950000000000001,
+          0
+        ],
+        "color": "#bfa178",
+        "grooves": []
+      },
+      {
+        "id": "slab",
+        "size": [
+          720,
+          250,
+          19
+        ],
+        "p": [
+          0,
+          76.25,
+          -184.5
+        ],
+        "color": "#739083",
+        "grooves": []
+      }
+    ],
+    "hardware": [
+      {
+        "id": "back--1-0",
+        "parent": "back",
+        "p": [
+          -316.5,
+          120.5,
+          165.5
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "back--1-1",
+        "parent": "back",
+        "p": [
+          -316.5,
+          40,
+          165.5
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "back-1-0",
+        "parent": "back",
+        "p": [
+          316.5,
+          120.5,
+          165.5
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "back-1-1",
+        "parent": "back",
+        "p": [
+          316.5,
+          40,
+          165.5
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "slab--1-0",
+        "parent": "left",
+        "p": [
+          -326,
+          120.5,
+          -175
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "slab--1-1",
+        "parent": "left",
+        "p": [
+          -326,
+          40,
+          -175
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "slab-1-0",
+        "parent": "right",
+        "p": [
+          326,
+          120.5,
+          -175
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "slab-1-1",
+        "parent": "right",
+        "p": [
+          326,
+          40,
+          -175
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "pivot--1-0",
+        "parent": "front",
+        "p": [
+          -316.5,
+          120.5,
+          -165.5
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "pivot--1-1",
+        "parent": "front",
+        "p": [
+          -316.5,
+          20,
+          -165.5
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "pivot-1-0",
+        "parent": "front",
+        "p": [
+          316.5,
+          120.5,
+          -165.5
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "pivot-1-1",
+        "parent": "front",
+        "p": [
+          316.5,
+          20,
+          -165.5
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "support-pin--1--16",
+        "parent": "support",
+        "p": [
+          -16,
+          5.950000000000001,
+          -156
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "support-pin--1-16",
+        "parent": "support",
+        "p": [
+          16,
+          5.950000000000001,
+          -156
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "support-pin-1--16",
+        "parent": "support",
+        "p": [
+          -16,
+          5.950000000000001,
+          156
+        ],
+        "n": [
+          0,
+          0,
+          1
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "support-pin-1-16",
+        "parent": "support",
+        "p": [
+          16,
+          5.950000000000001,
+          156
+        ],
+        "n": [
+          0,
+          0,
+          1
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "8002-40-R5"
+      }
+    ],
+    "scenes": [
+      {
+        "label": "Built around your drawer.",
+        "caption": "A source-led assembly concept • E900BP",
+        "seconds": 3.5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom",
+          "support",
+          "slab"
+        ],
+        "moves": {},
+        "hero": true
+      },
+      {
+        "label": "Every part has a purpose.",
+        "caption": "Pre-installed hardware is shown in place. Green nylon connectors; metallic spring pins.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom",
+          "support",
+          "slab"
+        ],
+        "moves": {
+          "left": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "right": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "back": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                85
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                85
+              ],
+              "angle": 0
+            }
+          ],
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                -85
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                -85
+              ],
+              "angle": 0
+            }
+          ],
+          "bottom": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                110,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                110,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "support": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                -65,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                -65,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "slab": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                -175
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                -175
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "overview": true
+      },
+      {
+        "label": "Align. Insert. Engage.",
+        "caption": "Align all connections together before seating the frame.",
+        "seconds": 7,
+        "visible": [
+          "left",
+          "right",
+          "back"
+        ],
+        "moves": {
+          "left": [
+            {
+              "t": 0,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.2,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.55,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "right": [
+            {
+              "t": 0,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.2,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.55,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "back": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                18,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.58,
+              "offset": [
+                0,
+                18,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.88,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "active": [
+          "back--1-0",
+          "back--1-1",
+          "back-1-0",
+          "back-1-1"
+        ],
+        "detail": "back--1-0",
+        "ghost": [
+          "left"
+        ],
+        "rear": true,
+        "phase": "lock",
+        "note": "Both sides engage together."
+      },
+      {
+        "label": "Install the sub-front separately.",
+        "caption": "Align the upper pivot pins, then seat the sub-front in its open position.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front"
+        ],
+        "moves": {
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                45,
+                -60
+              ],
+              "angle": 82
+            },
+            {
+              "t": 0.18,
+              "offset": [
+                0,
+                45,
+                -60
+              ],
+              "angle": 82
+            },
+            {
+              "t": 0.82,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            }
+          ]
+        },
+        "detail": "pivot--1-0",
+        "active": [
+          "pivot--1-0",
+          "pivot-1-0"
+        ],
+        "phase": "subfront",
+        "note": "Separate sub-front installation; confirm pin access and fit with the shop."
+      },
+      {
+        "label": "Add the bottom support.",
+        "caption": "Align the support hardware with the rear receiving locations.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "support"
+        ],
+        "moves": {
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            }
+          ],
+          "support": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                -70
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.15,
+              "offset": [
+                0,
+                0,
+                -70
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.85,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "detail": "support-pin-1--16",
+        "active": [
+          "support-pin-1--16",
+          "support-pin-1-16"
+        ],
+        "ghost": [
+          "back"
+        ],
+        "rear": true,
+        "note": "Support fit and installation order require confirmation."
+      },
+      {
+        "label": "Slide the bottom into its grooves.",
+        "caption": "The sub-front stays open on its upper pivot pins.",
+        "seconds": 5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "support",
+          "bottom"
+        ],
+        "moves": {
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            }
+          ],
+          "bottom": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                -380
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.12,
+              "offset": [
+                0,
+                0,
+                -380
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.88,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "wide": true,
+        "detail": "groove",
+        "note": "Bottom captured by the routed grooves."
+      },
+      {
+        "label": "Rotate the sub-front closed.",
+        "caption": "The upper pins form the pivot; the lower pins return into the notches.",
+        "seconds": 5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "support",
+          "bottom"
+        ],
+        "moves": {
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            },
+            {
+              "t": 0.18,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            },
+            {
+              "t": 0.87,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "detail": "pivot--1-1",
+        "active": [
+          "pivot--1-1",
+          "pivot-1-1"
+        ],
+        "ghost": [
+          "left"
+        ],
+        "note": "Keep the pins aligned. Do not force the front.",
+        "phase": "pivot"
+      },
+      {
+        "label": "Connect the finished front.",
+        "caption": "Insert all channel locks, pause, then slide the finished front straight down.",
+        "seconds": 8,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "support",
+          "bottom",
+          "slab"
+        ],
+        "moves": {
+          "slab": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                32,
+                -80
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.15,
+              "offset": [
+                0,
+                32,
+                -80
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.48,
+              "offset": [
+                0,
+                32,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.6,
+              "offset": [
+                0,
+                32,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "detail": "slab--1-0",
+        "active": [
+          "slab--1-0",
+          "slab--1-1",
+          "slab-1-0",
+          "slab-1-1"
+        ],
+        "ghost": [
+          "slab"
+        ],
+        "phase": "front-drop",
+        "note": "Insert together, then slide down together."
+      },
+      {
+        "label": "Ready for the next connection.",
+        "caption": "Explore this drawer style with Lockdowel.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom",
+          "support",
+          "slab"
+        ],
+        "moves": {},
+        "hero": true,
+        "end": true
+      }
+    ],
+    "assumptions": [
+      "Assembly sequence inferred from the marked PDF; no assembly-order document was supplied.",
+      "Visualization is a marketing assembly concept, not approved installation or machining instructions.",
+      "Connector outlines, receiver undercuts and engagement travel are illustrative; not production CAD.",
+      "Drawer guides, decorative pulls and cabinet carcass are intentionally outside this drawer assembly demonstration.",
+      "The 19 mm filename conflicts with the older 18 mm BOM. This concept uses 19 mm stock and preserves the 671 mm drawn overall box width; front/back width is adjusted to 633 mm.",
+      "Older bottom and support cut-list dimensions do not consistently fit the marked views; concept uses fitted groove/support dimensions.",
+      "Upper-pivot / lower-notch rotation is inferred from the drawing. Verify groove clearance, pin fit and final locking direction before using as installation instructions."
+    ],
+    "source": {
+      "filename": "LD 6in Flip front CL DB  with support - 19mm DOTS.pdf",
+      "sha256": "b84291b35db1ea55c12887b9eedb24fb6b1de87b9db6940ec44cd8d0adfafdfd",
+      "pages": 5
+    },
+    "familyKey": "channel",
+    "description": "A 6-inch drawer with a pivoting sub-front, E900BP channel locks and a center support beneath the bottom.",
+    "focus": "A front that opens the assembly path.",
+    "highlights": [
+      "The rear joints seat first; the sub-front installs in its own step on the upper pivot pins.",
+      "The center support sits beneath the bottom; the bottom enters from the open front.",
+      "After the sub-front rotates closed, insert the finished front, pause, and slide it straight down."
+    ],
+    "hardwareText": "8 × E900BP channel locks; 8 × 8002-40-R5 spring pins",
+    "stock": "19 mm box",
+    "duration": 44.5,
+    "revision": "feedback-20261018",
+    "camera": {
+      "azimuth": -0.78,
+      "elevation": 0.9,
+      "distanceScale": 2.2,
+      "targetZ": -70
+    }
+  },
+  {
+    "id": "h-clip-supported",
+    "title": "4.75-inch H-clip drawer",
+    "family": "H-clip",
+    "sku": "E910BP",
+    "inner": 633,
+    "t": 19,
+    "h": 120,
+    "d": 335,
+    "slabW": 720,
+    "slabH": 250,
+    "flip": false,
+    "support": true,
+    "pin": "8002-40-R5",
+    "pivot": [
+      0,
+      88,
+      -158
+    ],
+    "index": 2,
+    "parts": [
+      {
+        "id": "left",
+        "size": [
+          19,
+          120,
+          335
+        ],
+        "p": [
+          -326,
+          60,
+          0
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              9,
+              7,
+              337
+            ],
+            "p": [
+              5.5,
+              -44.5,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "right",
+        "size": [
+          19,
+          120,
+          335
+        ],
+        "p": [
+          326,
+          60,
+          0
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              9,
+              7,
+              337
+            ],
+            "p": [
+              -5.5,
+              -44.5,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "back",
+        "size": [
+          633,
+          120,
+          19
+        ],
+        "p": [
+          0,
+          60,
+          158
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              634,
+              7,
+              8
+            ],
+            "p": [
+              0,
+              -44.5,
+              -6
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bottom",
+        "size": [
+          645,
+          6.4,
+          309
+        ],
+        "p": [
+          0,
+          15.5,
+          0
+        ],
+        "color": "#eee0c4",
+        "grooves": []
+      },
+      {
+        "id": "support",
+        "size": [
+          104,
+          19,
+          297
+        ],
+        "p": [
+          0,
+          2.8000000000000007,
+          0
+        ],
+        "color": "#bfa178",
+        "grooves": []
+      },
+      {
+        "id": "slab",
+        "size": [
+          720,
+          250,
+          19
+        ],
+        "p": [
+          0,
+          60,
+          -177
+        ],
+        "color": "#739083",
+        "grooves": []
+      }
+    ],
+    "hardware": [
+      {
+        "id": "back--1-0",
+        "parent": "back",
+        "p": [
+          -316.5,
+          68,
+          158
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E910BP"
+      },
+      {
+        "id": "back-1-0",
+        "parent": "back",
+        "p": [
+          316.5,
+          68,
+          158
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E910BP"
+      },
+      {
+        "id": "slab--1-0",
+        "parent": "left",
+        "p": [
+          -326,
+          68,
+          -167.5
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E910BP"
+      },
+      {
+        "id": "slab-1-0",
+        "parent": "right",
+        "p": [
+          326,
+          68,
+          -167.5
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E910BP"
+      },
+      {
+        "id": "support-lock--1",
+        "parent": "support",
+        "p": [
+          0,
+          2.8000000000000007,
+          -148.5
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "E910BP"
+      },
+      {
+        "id": "support-pin--1",
+        "parent": "support",
+        "p": [
+          -34,
+          2.8000000000000007,
+          -148.5
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "support-lock-1",
+        "parent": "support",
+        "p": [
+          0,
+          2.8000000000000007,
+          148.5
+        ],
+        "n": [
+          0,
+          0,
+          1
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "E910BP"
+      },
+      {
+        "id": "support-pin-1",
+        "parent": "support",
+        "p": [
+          -34,
+          2.8000000000000007,
+          148.5
+        ],
+        "n": [
+          0,
+          0,
+          1
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "rear-pin--1",
+        "parent": "back",
+        "p": [
+          -316.5,
+          20,
+          158
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "face-pin--1",
+        "parent": "left",
+        "p": [
+          -326,
+          100,
+          -167.5
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "rear-pin-1",
+        "parent": "back",
+        "p": [
+          316.5,
+          20,
+          158
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8002-40-R5"
+      },
+      {
+        "id": "face-pin-1",
+        "parent": "right",
+        "p": [
+          326,
+          100,
+          -167.5
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8002-40-R5"
+      }
+    ],
+    "scenes": [
+      {
+        "label": "Built around your drawer.",
+        "caption": "A source-led assembly concept • E910BP",
+        "seconds": 3.5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "bottom",
+          "support",
+          "slab"
+        ],
+        "moves": {},
+        "hero": true
+      },
+      {
+        "label": "Every part has a purpose.",
+        "caption": "Pre-installed hardware is shown in place. Green nylon connectors; metallic spring pins.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "bottom",
+          "support",
+          "slab"
+        ],
+        "moves": {
+          "left": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "right": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "back": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                85
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                85
+              ],
+              "angle": 0
+            }
+          ],
+          "bottom": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                110,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                110,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "support": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                -65,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                -65,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "slab": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                -175
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                -175
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "overview": true
+      },
+      {
+        "label": "Bring the side joints together.",
+        "caption": "Align all connections together before seating the frame.",
+        "seconds": 7,
+        "visible": [
+          "left",
+          "right",
+          "back"
+        ],
+        "moves": {
+          "left": [
+            {
+              "t": 0,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.2,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.55,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "right": [
+            {
+              "t": 0,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.2,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.55,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "active": [
+          "back--1-0",
+          "back-1-0"
+        ],
+        "detail": "back--1-0",
+        "ghost": [
+          "left"
+        ],
+        "rear": true,
+        "phase": "insertion",
+        "note": "H-clip engagement shown as an inferred concept."
+      },
+      {
+        "label": "Add the bottom support.",
+        "caption": "Align the support hardware with the rear receiving locations.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "support"
+        ],
+        "moves": {
+          "support": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                -70
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.15,
+              "offset": [
+                0,
+                0,
+                -70
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.85,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "detail": "support-lock-1",
+        "active": [
+          "support-lock-1",
+          "support-pin-1"
+        ],
+        "ghost": [
+          "back"
+        ],
+        "rear": true,
+        "note": "Support fit and installation order require confirmation."
+      },
+      {
+        "label": "Slide the bottom into its grooves.",
+        "caption": "Keep the bottom level as it enters the side grooves.",
+        "seconds": 5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "support",
+          "bottom"
+        ],
+        "moves": {
+          "bottom": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                -365
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.12,
+              "offset": [
+                0,
+                0,
+                -365
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.88,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "wide": true,
+        "detail": "groove",
+        "note": "Bottom captured by the routed grooves."
+      },
+      {
+        "label": "Connect the finished front.",
+        "caption": "Align the H-clips and spring pins, then seat the front evenly.",
+        "seconds": 6,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "support",
+          "bottom",
+          "slab"
+        ],
+        "moves": {
+          "slab": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                -80
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.15,
+              "offset": [
+                0,
+                0,
+                -80
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.48,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.6,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "detail": "slab--1-0",
+        "active": [
+          "slab--1-0",
+          "slab-1-0"
+        ],
+        "ghost": [
+          "slab"
+        ],
+        "phase": "insertion",
+        "note": "Engagement direction requires shop confirmation."
+      },
+      {
+        "label": "Ready for the next connection.",
+        "caption": "Explore this drawer style with Lockdowel.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "bottom",
+          "support",
+          "slab"
+        ],
+        "moves": {},
+        "hero": true,
+        "end": true
+      }
+    ],
+    "assumptions": [
+      "Assembly sequence inferred from the marked PDF; no assembly-order document was supplied.",
+      "Visualization is a marketing assembly concept, not approved installation or machining instructions.",
+      "Connector outlines, receiver undercuts and engagement travel are illustrative; not production CAD.",
+      "Drawer guides, decorative pulls and cabinet carcass are intentionally outside this drawer assembly demonstration.",
+      "The 19 mm filename conflicts with the older 18 mm BOM. This concept uses 19 mm stock and preserves the 671 mm drawn overall box width; front/back width is adjusted to 633 mm.",
+      "Older bottom and support cut-list dimensions do not consistently fit the marked views; concept uses fitted groove/support dimensions.",
+      "H-clip plus spring-pin engagement is shown as normal insertion. The PDF does not establish an assembly sequence; this action requires Murray’s confirmation."
+    ],
+    "source": {
+      "filename": "LD 4.75in 4-Piece HC DB with support - 19mm DOTS.pdf",
+      "sha256": "1d65202dca448d4f1babca44b7fc8a912976db0145082d43692869b8ec4c1c78",
+      "pages": 4
+    },
+    "familyKey": "hclip",
+    "description": "A four-piece drawer construction using E910BP H-clips, spring pins and a center support. The separate finished front completes the box.",
+    "focus": "H-clips, spring pins and a supported bottom.",
+    "highlights": [
+      "H-clips and spring pins are identified separately in the source legend.",
+      "The center support carries the bottom between the back and the finished front.",
+      "The final front connects across the side panels and the support. The engagement action shown is inferred."
+    ],
+    "hardwareText": "6 × E910BP H-clips; 6 × 8002-40-R5 spring pins",
+    "stock": "19 mm box",
+    "duration": 33.5,
+    "revision": "feedback-20261018",
+    "camera": {
+      "azimuth": -0.78,
+      "elevation": 0.9,
+      "distanceScale": 2.2,
+      "targetZ": -67
+    }
+  },
+  {
+    "id": "channel-lock-fixed-bottom",
+    "title": "5-inch fixed-bottom drawer",
+    "family": "Channel lock",
+    "sku": "E900BP",
+    "inner": 529.5,
+    "t": 19,
+    "h": 127,
+    "d": 375,
+    "flip": false,
+    "support": false,
+    "fixed": true,
+    "pin": "7000",
+    "pivot": [
+      0,
+      95,
+      -178
+    ],
+    "index": 3,
+    "parts": [
+      {
+        "id": "left",
+        "size": [
+          19,
+          127,
+          375
+        ],
+        "p": [
+          -274.25,
+          63.5,
+          0
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              9,
+              7,
+              377
+            ],
+            "p": [
+              5.5,
+              -48,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "right",
+        "size": [
+          19,
+          127,
+          375
+        ],
+        "p": [
+          274.25,
+          63.5,
+          0
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              9,
+              7,
+              377
+            ],
+            "p": [
+              -5.5,
+              -48,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "back",
+        "size": [
+          529.5,
+          108,
+          19
+        ],
+        "p": [
+          0,
+          73,
+          178
+        ],
+        "color": "#d7bb8d",
+        "grooves": []
+      },
+      {
+        "id": "front",
+        "size": [
+          529.5,
+          127,
+          19
+        ],
+        "p": [
+          0,
+          63.5,
+          -178
+        ],
+        "color": "#d1b387",
+        "grooves": [
+          {
+            "size": [
+              530.5,
+              7,
+              8
+            ],
+            "p": [
+              0,
+              -48,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bottom",
+        "size": [
+          541.5,
+          6.4,
+          362
+        ],
+        "p": [
+          0,
+          15.5,
+          6.5
+        ],
+        "color": "#eee0c4",
+        "grooves": [],
+        "holes": [
+          {
+            "radius": 3.2,
+            "p": [
+              -132.4,
+              0,
+              171.5
+            ]
+          },
+          {
+            "radius": 3.2,
+            "p": [
+              0,
+              0,
+              171.5
+            ]
+          },
+          {
+            "radius": 3.2,
+            "p": [
+              132.4,
+              0,
+              171.5
+            ]
+          }
+        ]
+      }
+    ],
+    "hardware": [
+      {
+        "id": "back--1-0",
+        "parent": "back",
+        "p": [
+          -264.75,
+          86,
+          178
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "back-1-0",
+        "parent": "back",
+        "p": [
+          264.75,
+          86,
+          178
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "front--1",
+        "parent": "front",
+        "p": [
+          -264.75,
+          86,
+          -178
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "front-1",
+        "parent": "front",
+        "p": [
+          264.75,
+          86,
+          -178
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BP"
+      },
+      {
+        "id": "fix-0",
+        "parent": "bottom",
+        "p": [
+          -132.4,
+          25.3,
+          178
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "7000"
+      },
+      {
+        "id": "fix-1",
+        "parent": "bottom",
+        "p": [
+          0,
+          25.3,
+          178
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "7000"
+      },
+      {
+        "id": "fix-2",
+        "parent": "bottom",
+        "p": [
+          132.4,
+          25.3,
+          178
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "sku": "7000"
+      }
+    ],
+    "scenes": [
+      {
+        "label": "Built around your drawer.",
+        "caption": "A source-led assembly concept • E900BP",
+        "seconds": 3.5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom"
+        ],
+        "moves": {},
+        "hero": true
+      },
+      {
+        "label": "Every part has a purpose.",
+        "caption": "The bottom has three through holes. The 7000 fasteners are installed later.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom"
+        ],
+        "moves": {
+          "left": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "right": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "back": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                85
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                85
+              ],
+              "angle": 0
+            }
+          ],
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                -85
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                -85
+              ],
+              "angle": 0
+            }
+          ],
+          "bottom": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                -100,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                -100,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "overview": true
+      },
+      {
+        "label": "Align. Insert. Engage.",
+        "caption": "Align all connections together before seating the frame.",
+        "seconds": 7,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front"
+        ],
+        "moves": {
+          "left": [
+            {
+              "t": 0,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.2,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.55,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "right": [
+            {
+              "t": 0,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.2,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.55,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "back": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                18,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.58,
+              "offset": [
+                0,
+                18,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.88,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                18,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.58,
+              "offset": [
+                0,
+                18,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.88,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "active": [
+          "back--1-0",
+          "back-1-0",
+          "front--1",
+          "front-1"
+        ],
+        "detail": "back--1-0",
+        "ghost": [
+          "left"
+        ],
+        "rear": true,
+        "phase": "lock",
+        "note": "Both sides engage together."
+      },
+      {
+        "label": "Slide the bottom into its grooves.",
+        "caption": "Slide beneath the rear panel with all three through holes empty.",
+        "seconds": 5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom"
+        ],
+        "moves": {
+          "bottom": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                405
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.12,
+              "offset": [
+                0,
+                0,
+                405
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.88,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "wide": true,
+        "rear": true,
+        "detail": "groove",
+        "note": "Bottom captured by the routed grooves."
+      },
+      {
+        "label": "Secure the bottom to the back.",
+        "caption": "Three 7000 back-panel fasteners pass through the bottom into the rear panel.",
+        "seconds": 5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom"
+        ],
+        "moves": {},
+        "detail": "fix-0",
+        "active": [
+          "fix-0",
+          "fix-1",
+          "fix-2"
+        ],
+        "pinInstall": true,
+        "ghost": [
+          "bottom",
+          "back"
+        ],
+        "rear": true,
+        "note": "7000 fastener length is illustrative; confirm the supplied variant."
+      },
+      {
+        "label": "Ready for the next connection.",
+        "caption": "Explore this drawer style with Lockdowel.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom"
+        ],
+        "moves": {},
+        "hero": true,
+        "end": true
+      }
+    ],
+    "assumptions": [
+      "Assembly sequence inferred from the marked PDF; no assembly-order document was supplied.",
+      "Visualization is a marketing assembly concept, not approved installation or machining instructions.",
+      "Connector outlines, receiver undercuts and engagement travel are illustrative; not production CAD.",
+      "Drawer guides, decorative pulls and cabinet carcass are intentionally outside this drawer assembly demonstration."
+    ],
+    "source": {
+      "filename": "LD 5in 4-Piece CL DB Fixed bottom - 19mm DOTS.pdf",
+      "sha256": "4fa635278faef07f8711fa40989e3d4efb1902bd4c3cc6eeff1d3e5e0a79450b",
+      "pages": 1
+    },
+    "familyKey": "channel",
+    "description": "A 5-inch channel-lock drawer with the bottom captured in three grooves and secured to the raised rear panel with three 7000 fasteners.",
+    "focus": "A captured bottom. A different finish.",
+    "highlights": [
+      "Four E900BP channel locks connect the front and rear panels to the sides.",
+      "The bottom slides in beneath the raised rear panel and enters the side and front grooves.",
+      "Three empty through holes remain visible while the bottom slides in; the 7000 fasteners are installed afterward."
+    ],
+    "hardwareText": "4 × E900BP channel locks; 3 × 7000 back-panel fasteners",
+    "stock": "19 mm box",
+    "duration": 28.5,
+    "revision": "feedback-20261018",
+    "camera": {
+      "azimuth": 2.45,
+      "elevation": 0.9,
+      "distanceScale": 2.2,
+      "targetZ": 75
+    }
+  },
+  {
+    "id": "mini-flip-front",
+    "title": "5-inch mini flip-front drawer",
+    "family": "Mini channel lock",
+    "sku": "E900BPMini",
+    "inner": 178,
+    "t": 12.5,
+    "h": 127,
+    "d": 312.5,
+    "slabW": 248,
+    "slabH": 149,
+    "flip": true,
+    "support": false,
+    "pin": "8005-36",
+    "pivot": [
+      0,
+      104,
+      -150
+    ],
+    "index": 4,
+    "parts": [
+      {
+        "id": "left",
+        "size": [
+          12.5,
+          127,
+          312.5
+        ],
+        "p": [
+          -95.25,
+          63.5,
+          0
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              9,
+              7,
+              314.5
+            ],
+            "p": [
+              2.25,
+              -48,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "right",
+        "size": [
+          12.5,
+          127,
+          312.5
+        ],
+        "p": [
+          95.25,
+          63.5,
+          0
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              9,
+              7,
+              314.5
+            ],
+            "p": [
+              -2.25,
+              -48,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "back",
+        "size": [
+          178,
+          127,
+          12.5
+        ],
+        "p": [
+          0,
+          63.5,
+          150
+        ],
+        "color": "#d7bb8d",
+        "grooves": [
+          {
+            "size": [
+              179,
+              7,
+              8
+            ],
+            "p": [
+              0,
+              -48,
+              -2.75
+            ]
+          }
+        ]
+      },
+      {
+        "id": "front",
+        "size": [
+          178,
+          127,
+          12.5
+        ],
+        "p": [
+          0,
+          63.5,
+          -150
+        ],
+        "color": "#d1b387",
+        "grooves": [
+          {
+            "size": [
+              179,
+              7,
+              8
+            ],
+            "p": [
+              0,
+              -48,
+              2.75
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bottom",
+        "size": [
+          190,
+          6.4,
+          299.5
+        ],
+        "p": [
+          0,
+          15.5,
+          0
+        ],
+        "color": "#eee0c4",
+        "grooves": []
+      },
+      {
+        "id": "slab",
+        "size": [
+          248,
+          149,
+          19
+        ],
+        "p": [
+          0,
+          63.5,
+          -165.75
+        ],
+        "color": "#739083",
+        "grooves": []
+      }
+    ],
+    "hardware": [
+      {
+        "id": "back--1-0",
+        "parent": "back",
+        "p": [
+          -89,
+          104,
+          150
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BPMini"
+      },
+      {
+        "id": "back--1-1",
+        "parent": "back",
+        "p": [
+          -89,
+          29,
+          150
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BPMini"
+      },
+      {
+        "id": "back-1-0",
+        "parent": "back",
+        "p": [
+          89,
+          104,
+          150
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BPMini"
+      },
+      {
+        "id": "back-1-1",
+        "parent": "back",
+        "p": [
+          89,
+          29,
+          150
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BPMini"
+      },
+      {
+        "id": "slab--1-0",
+        "parent": "left",
+        "p": [
+          -95.25,
+          104,
+          -156.25
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BPMini"
+      },
+      {
+        "id": "slab--1-1",
+        "parent": "left",
+        "p": [
+          -95.25,
+          29,
+          -156.25
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BPMini"
+      },
+      {
+        "id": "slab-1-0",
+        "parent": "right",
+        "p": [
+          95.25,
+          104,
+          -156.25
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BPMini"
+      },
+      {
+        "id": "slab-1-1",
+        "parent": "right",
+        "p": [
+          95.25,
+          29,
+          -156.25
+        ],
+        "n": [
+          0,
+          0,
+          -1
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "E900BPMini"
+      },
+      {
+        "id": "pivot--1-0",
+        "parent": "front",
+        "p": [
+          -89,
+          104,
+          -150
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8005-36"
+      },
+      {
+        "id": "pivot--1-1",
+        "parent": "front",
+        "p": [
+          -89,
+          26,
+          -150
+        ],
+        "n": [
+          -1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8005-36"
+      },
+      {
+        "id": "pivot-1-0",
+        "parent": "front",
+        "p": [
+          89,
+          104,
+          -150
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8005-36"
+      },
+      {
+        "id": "pivot-1-1",
+        "parent": "front",
+        "p": [
+          89,
+          26,
+          -150
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "sku": "8005-36"
+      }
+    ],
+    "scenes": [
+      {
+        "label": "Built around your drawer.",
+        "caption": "A source-led assembly concept • E900BPMini",
+        "seconds": 3.5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom",
+          "slab"
+        ],
+        "moves": {},
+        "hero": true
+      },
+      {
+        "label": "Every part has a purpose.",
+        "caption": "Pre-installed hardware is shown in place. Green nylon connectors; metallic spring pins.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom",
+          "slab"
+        ],
+        "moves": {
+          "left": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "right": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "back": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                85
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                85
+              ],
+              "angle": 0
+            }
+          ],
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                -85
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                -85
+              ],
+              "angle": 0
+            }
+          ],
+          "bottom": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                110,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                110,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "slab": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                -175
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                -175
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "overview": true
+      },
+      {
+        "label": "Align. Insert. Engage.",
+        "caption": "Align all connections together before seating the frame.",
+        "seconds": 7,
+        "visible": [
+          "left",
+          "right",
+          "back"
+        ],
+        "moves": {
+          "left": [
+            {
+              "t": 0,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.2,
+              "offset": [
+                -60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.55,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "right": [
+            {
+              "t": 0,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.2,
+              "offset": [
+                60,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.55,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ],
+          "back": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                14,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.58,
+              "offset": [
+                0,
+                14,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.88,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "active": [
+          "back--1-0",
+          "back--1-1",
+          "back-1-0",
+          "back-1-1"
+        ],
+        "detail": "back--1-0",
+        "ghost": [
+          "left"
+        ],
+        "rear": true,
+        "phase": "lock",
+        "note": "Both sides engage together."
+      },
+      {
+        "label": "Install the sub-front separately.",
+        "caption": "Align the upper pivot pins, then seat the sub-front in its open position.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front"
+        ],
+        "moves": {
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                45,
+                -60
+              ],
+              "angle": 82
+            },
+            {
+              "t": 0.18,
+              "offset": [
+                0,
+                45,
+                -60
+              ],
+              "angle": 82
+            },
+            {
+              "t": 0.82,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            }
+          ]
+        },
+        "detail": "pivot--1-0",
+        "active": [
+          "pivot--1-0",
+          "pivot-1-0"
+        ],
+        "phase": "subfront",
+        "note": "Separate sub-front installation; confirm pin access and fit with the shop."
+      },
+      {
+        "label": "Slide the bottom into its grooves.",
+        "caption": "The sub-front stays open on its upper pivot pins.",
+        "seconds": 5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom"
+        ],
+        "moves": {
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            }
+          ],
+          "bottom": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                -342.5
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.12,
+              "offset": [
+                0,
+                0,
+                -342.5
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.88,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "wide": true,
+        "detail": "groove",
+        "note": "Bottom captured by the routed grooves."
+      },
+      {
+        "label": "Rotate the sub-front closed.",
+        "caption": "The upper pins form the pivot; the lower pins return into the notches.",
+        "seconds": 5,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom"
+        ],
+        "moves": {
+          "front": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            },
+            {
+              "t": 0.18,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 82
+            },
+            {
+              "t": 0.87,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "detail": "pivot--1-1",
+        "active": [
+          "pivot--1-1",
+          "pivot-1-1"
+        ],
+        "ghost": [
+          "left"
+        ],
+        "note": "Keep the pins aligned. Do not force the front.",
+        "phase": "pivot"
+      },
+      {
+        "label": "Connect the finished front.",
+        "caption": "Insert all channel locks, pause, then slide the finished front straight down.",
+        "seconds": 8,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom",
+          "slab"
+        ],
+        "moves": {
+          "slab": [
+            {
+              "t": 0,
+              "offset": [
+                0,
+                22,
+                -80
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.15,
+              "offset": [
+                0,
+                22,
+                -80
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.48,
+              "offset": [
+                0,
+                22,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.6,
+              "offset": [
+                0,
+                22,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 0.9,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            },
+            {
+              "t": 1,
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "angle": 0
+            }
+          ]
+        },
+        "detail": "slab--1-0",
+        "active": [
+          "slab--1-0",
+          "slab--1-1",
+          "slab-1-0",
+          "slab-1-1"
+        ],
+        "ghost": [
+          "slab"
+        ],
+        "phase": "front-drop",
+        "note": "Insert together, then slide down together."
+      },
+      {
+        "label": "Ready for the next connection.",
+        "caption": "Explore this drawer style with Lockdowel.",
+        "seconds": 4,
+        "visible": [
+          "left",
+          "right",
+          "back",
+          "front",
+          "bottom",
+          "slab"
+        ],
+        "moves": {},
+        "hero": true,
+        "end": true
+      }
+    ],
+    "assumptions": [
+      "Assembly sequence inferred from the marked PDF; no assembly-order document was supplied.",
+      "Visualization is a marketing assembly concept, not approved installation or machining instructions.",
+      "Connector outlines, receiver undercuts and engagement travel are illustrative; not production CAD.",
+      "Drawer guides, decorative pulls and cabinet carcass are intentionally outside this drawer assembly demonstration.",
+      "Upper-pivot / lower-notch rotation is inferred from the drawing. Verify groove clearance, pin fit and final locking direction before using as installation instructions.",
+      "Nominal half-inch stock is represented as 12.5 mm to match the 203 mm overall view.",
+      "BOM Mini-Flip naming has no separate verified geometry; eight E900BPMini-style connectors follow the marked legend."
+    ],
+    "source": {
+      "filename": "LD 5in Flip front CL-Mini DB - half inch DOTS.pdf",
+      "sha256": "927fb94ec654685bbebd20441c89d60c4d20ed33d711e540b66109576f998080",
+      "pages": 11
+    },
+    "familyKey": "mini",
+    "description": "The flip-front approach in a narrower, half-inch drawer box, using E900BPMini nylon channel locks and 5 mm spring pins.",
+    "focus": "The flip-front concept, sized for half-inch stock.",
+    "highlights": [
+      "The rear joints seat first; the sub-front installs in its own step on the upper pivot pins.",
+      "The sub-front pivots on its upper 5 mm pins to create the bottom-panel entry path.",
+      "After the sub-front rotates closed, insert the finished front, pause, and slide it straight down."
+    ],
+    "hardwareText": "8 × E900BPMini-style channel locks; 4 × 8005-36 spring pins",
+    "stock": "½-inch box / ¾-inch front",
+    "duration": 40.5,
+    "revision": "feedback-20261018",
+    "camera": {
+      "azimuth": -0.78,
+      "elevation": 0.9,
+      "distanceScale": 2.2,
+      "targetZ": -62.5
+    }
+  }
+]

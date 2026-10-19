@@ -1,0 +1,11 @@
+5-inch fixed-bottom drawer
+Assembly concept — revised from October 18 feedback
+
+Assembly sequence inferred from the marked PDF; no assembly-order document was supplied.
+Visualization is a marketing assembly concept, not approved installation or machining instructions.
+Connector outlines, receiver undercuts and engagement travel are illustrative; not production CAD.
+Drawer guides, decorative pulls and cabinet carcass are intentionally outside this drawer assembly demonstration.
+
+Presentation revision: one fixed main view, opaque main panels, and eased step transitions. The bottom explodes downward and has three empty through holes until the separate 7000 installation step.
+
+Source SHA-256: 4fa635278faef07f8711fa40989e3d4efb1902bd4c3cc6eeff1d3e5e0a79450b

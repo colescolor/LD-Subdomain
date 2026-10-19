@@ -1,0 +1,51 @@
+LOCKDOWEL DRAWER DEMOS — WORDPRESS / E-BLAST HANDOFF
+
+Campaign link: https://subdomain-theta.vercel.app/drawer-boxes/
+Public access. No password.
+
+WordPress: add a Video block, choose Insert from URL, then paste the MP4 URL below. Alternatively upload the MP4 to the Media Library.
+Official guide: https://wordpress.org/documentation/article/video-block/
+
+For a Custom HTML block, use each HTML snippet below. Films are pre-rendered; playing them does not invoke AI. Normal hosting/bandwidth costs still apply.
+
+These are assembly concepts, not approved installation instructions. Confirm the inferred H-clip engagement and drawing/BOM discrepancies with Murray before the e-blast.
+
+6-inch flip-front drawer
+Page: https://subdomain-theta.vercel.app/drawer-boxes/channel-lock-flip-front/
+MP4: https://subdomain-theta.vercel.app/drawer-boxes/media/channel-lock-flip-front/assembly.mp4
+Poster: https://subdomain-theta.vercel.app/drawer-boxes/media/channel-lock-flip-front/poster.jpg
+
+<video controls crossorigin="anonymous" playsinline preload="metadata" poster="https://subdomain-theta.vercel.app/drawer-boxes/media/channel-lock-flip-front/poster.jpg" style="width:100%;height:auto" aria-label="6-inch flip-front drawer assembly concept">
+  <source src="https://subdomain-theta.vercel.app/drawer-boxes/media/channel-lock-flip-front/assembly.mp4" type="video/mp4">
+  <track kind="captions" src="https://subdomain-theta.vercel.app/drawer-boxes/media/channel-lock-flip-front/captions.vtt" srclang="en" label="English">
+</video>
+
+4.75-inch H-clip drawer
+Page: https://subdomain-theta.vercel.app/drawer-boxes/h-clip-supported/
+MP4: https://subdomain-theta.vercel.app/drawer-boxes/media/h-clip-supported/assembly.mp4
+Poster: https://subdomain-theta.vercel.app/drawer-boxes/media/h-clip-supported/poster.jpg
+
+<video controls crossorigin="anonymous" playsinline preload="metadata" poster="https://subdomain-theta.vercel.app/drawer-boxes/media/h-clip-supported/poster.jpg" style="width:100%;height:auto" aria-label="4.75-inch H-clip drawer assembly concept">
+  <source src="https://subdomain-theta.vercel.app/drawer-boxes/media/h-clip-supported/assembly.mp4" type="video/mp4">
+  <track kind="captions" src="https://subdomain-theta.vercel.app/drawer-boxes/media/h-clip-supported/captions.vtt" srclang="en" label="English">
+</video>
+
+5-inch fixed-bottom drawer
+Page: https://subdomain-theta.vercel.app/drawer-boxes/channel-lock-fixed-bottom/
+MP4: https://subdomain-theta.vercel.app/drawer-boxes/media/channel-lock-fixed-bottom/assembly.mp4
+Poster: https://subdomain-theta.vercel.app/drawer-boxes/media/channel-lock-fixed-bottom/poster.jpg
+
+<video controls crossorigin="anonymous" playsinline preload="metadata" poster="https://subdomain-theta.vercel.app/drawer-boxes/media/channel-lock-fixed-bottom/poster.jpg" style="width:100%;height:auto" aria-label="5-inch fixed-bottom drawer assembly concept">
+  <source src="https://subdomain-theta.vercel.app/drawer-boxes/media/channel-lock-fixed-bottom/assembly.mp4" type="video/mp4">
+  <track kind="captions" src="https://subdomain-theta.vercel.app/drawer-boxes/media/channel-lock-fixed-bottom/captions.vtt" srclang="en" label="English">
+</video>
+
+5-inch mini flip-front drawer
+Page: https://subdomain-theta.vercel.app/drawer-boxes/mini-flip-front/
+MP4: https://subdomain-theta.vercel.app/drawer-boxes/media/mini-flip-front/assembly.mp4
+Poster: https://subdomain-theta.vercel.app/drawer-boxes/media/mini-flip-front/poster.jpg
+
+<video controls crossorigin="anonymous" playsinline preload="metadata" poster="https://subdomain-theta.vercel.app/drawer-boxes/media/mini-flip-front/poster.jpg" style="width:100%;height:auto" aria-label="5-inch mini flip-front drawer assembly concept">
+  <source src="https://subdomain-theta.vercel.app/drawer-boxes/media/mini-flip-front/assembly.mp4" type="video/mp4">
+  <track kind="captions" src="https://subdomain-theta.vercel.app/drawer-boxes/media/mini-flip-front/captions.vtt" srclang="en" label="English">
+</video>

@@ -1,0 +1,14 @@
+6-inch flip-front drawer
+Assembly concept — revised from October 18 feedback
+
+Assembly sequence inferred from the marked PDF; no assembly-order document was supplied.
+Visualization is a marketing assembly concept, not approved installation or machining instructions.
+Connector outlines, receiver undercuts and engagement travel are illustrative; not production CAD.
+Drawer guides, decorative pulls and cabinet carcass are intentionally outside this drawer assembly demonstration.
+The 19 mm filename conflicts with the older 18 mm BOM. This concept uses 19 mm stock and preserves the 671 mm drawn overall box width; front/back width is adjusted to 633 mm.
+Older bottom and support cut-list dimensions do not consistently fit the marked views; concept uses fitted groove/support dimensions.
+Upper-pivot / lower-notch rotation is inferred from the drawing. Verify groove clearance, pin fit and final locking direction before using as installation instructions.
+
+Presentation revision: one fixed main view, opaque main panels, and eased step transitions. Sub-front installation is separate; finished-front insertion pauses before a pronounced downward slide.
+
+Source SHA-256: b84291b35db1ea55c12887b9eedb24fb6b1de87b9db6940ec44cd8d0adfafdfd

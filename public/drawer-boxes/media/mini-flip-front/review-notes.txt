@@ -1,0 +1,14 @@
+5-inch mini flip-front drawer
+Assembly concept — revised from October 18 feedback
+
+Assembly sequence inferred from the marked PDF; no assembly-order document was supplied.
+Visualization is a marketing assembly concept, not approved installation or machining instructions.
+Connector outlines, receiver undercuts and engagement travel are illustrative; not production CAD.
+Drawer guides, decorative pulls and cabinet carcass are intentionally outside this drawer assembly demonstration.
+Upper-pivot / lower-notch rotation is inferred from the drawing. Verify groove clearance, pin fit and final locking direction before using as installation instructions.
+Nominal half-inch stock is represented as 12.5 mm to match the 203 mm overall view.
+BOM Mini-Flip naming has no separate verified geometry; eight E900BPMini-style connectors follow the marked legend.
+
+Presentation revision: one fixed main view, opaque main panels, and eased step transitions. Sub-front installation is separate; finished-front insertion pauses before a pronounced downward slide.
+
+Source SHA-256: 927fb94ec654685bbebd20441c89d60c4d20ed33d711e540b66109576f998080

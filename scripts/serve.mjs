@@ -8,7 +8,7 @@ import {createReadStream} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {dirname,join,resolve,extname,sep} from 'node:path';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'../dist');
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.woff2':'font/woff2','.mp4':'video/mp4','.pdf':'application/pdf','.txt':'text/plain; charset=utf-8','.xml':'application/xml'};
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.woff2':'font/woff2','.vtt':'text/vtt; charset=utf-8','.mp4':'video/mp4','.pdf':'application/pdf','.txt':'text/plain; charset=utf-8','.xml':'application/xml'};
 export function createLocalServer({accessOptions={}}={}){const secret=localProjectSecret();return createServer(async(req,res)=>{
  res.setHeader('X-Robots-Tag','noindex, nofollow');res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Referrer-Policy','strict-origin-when-cross-origin');res.setHeader('Cache-Control','no-store');
  const requestUrl='http://'+(req.headers.host||'127.0.0.1')+req.url;

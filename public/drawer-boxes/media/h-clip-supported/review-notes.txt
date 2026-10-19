@@ -1,0 +1,14 @@
+4.75-inch H-clip drawer
+Assembly concept — revised from October 18 feedback
+
+Assembly sequence inferred from the marked PDF; no assembly-order document was supplied.
+Visualization is a marketing assembly concept, not approved installation or machining instructions.
+Connector outlines, receiver undercuts and engagement travel are illustrative; not production CAD.
+Drawer guides, decorative pulls and cabinet carcass are intentionally outside this drawer assembly demonstration.
+The 19 mm filename conflicts with the older 18 mm BOM. This concept uses 19 mm stock and preserves the 671 mm drawn overall box width; front/back width is adjusted to 633 mm.
+Older bottom and support cut-list dimensions do not consistently fit the marked views; concept uses fitted groove/support dimensions.
+H-clip plus spring-pin engagement is shown as normal insertion. The PDF does not establish an assembly sequence; this action requires Murray’s confirmation.
+
+Presentation revision: one fixed main view, opaque main panels, and eased step transitions. The open side faces the viewer throughout assembly.
+
+Source SHA-256: 1d65202dca448d4f1babca44b7fc8a912976db0145082d43692869b8ec4c1c78
