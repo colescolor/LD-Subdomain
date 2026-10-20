@@ -1,2 +1,6 @@
 const filters=[...document.querySelectorAll('[data-filter]')];for(const b of filters)b.addEventListener('click',()=>{for(const f of filters)f.setAttribute('aria-pressed',String(f===b));let n=0;for(const c of document.querySelectorAll('[data-family]')){c.hidden=b.dataset.filter!=='all'&&c.dataset.family!==b.dataset.filter;if(!c.hidden)n++}document.querySelector('[data-count]').textContent=`${n} drawer ${n===1?'style':'styles'}`});
 const video=document.querySelector('video');if(video){for(const b of document.querySelectorAll('[data-time]'))b.addEventListener('click',()=>{video.currentTime=Number(b.dataset.time);video.play().catch(()=>{});video.focus()});video.addEventListener('timeupdate',()=>{const buttons=[...document.querySelectorAll('[data-time]')];for(let i=0;i<buttons.length;i++)buttons[i].setAttribute('aria-current',String(video.currentTime>=Number(buttons[i].dataset.time)&&(!buttons[i+1]||video.currentTime<Number(buttons[i+1].dataset.time))))})}
+
+// Starting another film pauses the previous one without leaving the collection.
+const collectionVideos=[...document.querySelectorAll('.video-card video')];
+for(const current of collectionVideos)current.addEventListener('play',()=>{for(const other of collectionVideos)if(other!==current)other.pause();});

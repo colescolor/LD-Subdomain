@@ -2,3 +2,25 @@
 
 /* Keep the complete drawer visible; reveal the keyboard skip link only on focus. */
 .hero-art img,.card-image img{object-fit:contain}.hero-art{text-decoration:none}.skip{position:absolute;top:0;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.skip:focus{position:fixed;top:5px;width:auto;height:auto;clip-path:none;overflow:visible}
+
+/* The collection plays all four films in place. */
+.collection-hero{display:block;padding-block:64px 42px;border-bottom:1px solid #d5ddca}
+.collection-hero h1{max-width:1100px;font-size:clamp(38px,5vw,66px);line-height:1.08;letter-spacing:-.045em;margin-bottom:24px;text-wrap:balance}.collection-hero h1>span,.collection-hero h1>em{display:block}
+.collection-hero .hero-copy>p:not(.eyebrow){max-width:660px;margin-bottom:0}
+
+.video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.video-card{aspect-ratio:1;min-width:0;background:#f2f0e9;transition:none}
+.video-card:hover{transform:none;box-shadow:none}
+.video-card .card-content{padding:24px 24px 0;flex-shrink:0}
+.video-card .card-content .eyebrow{margin-bottom:9px}
+.video-card .card-content h3{margin:0;font-size:clamp(21px,2.3vw,29px)}
+.card-video{flex:1;min-height:0;padding-top:12px}
+.card-video video{display:block;width:100%;height:100%;object-fit:contain;background:#f2f0e9}
+.card-video video:fullscreen{background:#000;object-fit:contain}
+.drawer-collection .section-head h2{margin:0}
+@media(max-width:800px){.collection-hero{padding-block:38px 32px}.video-grid{grid-template-columns:minmax(0,1fr);gap:22px}.video-card .card-content{padding:22px 22px 0}.video-card .card-content h3{font-size:26px}}
+@media(max-width:520px){.nav-links .all-drawers{display:inline}.nav{gap:12px}.nav-links{gap:10px}.video-card .card-content{padding:18px 18px 0}.video-card .card-content h3{font-size:23px}}
+@media(max-width:360px){.nav{flex-wrap:wrap;height:auto;padding-block:16px}.nav-links{width:100%;justify-content:space-between}}
+
+/* Original Lockdowel brand artwork, sized for the collection navigation. */
+.nav .brand{flex-shrink:0}.nav .brand img{display:block;width:180px;height:auto}@media(max-width:600px){.nav .brand img{width:110px}}
